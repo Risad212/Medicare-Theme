@@ -9,7 +9,7 @@
 <!--============== START SLIDER SECTION ===============-->
 <section class="slider-section">
       <div class="carousel-single-item owl-carousel owl-theme">
-         <div class="single-slider" style="background-image: url('assets/media/home/slider-1.jpg');">
+         <div class="single-slider" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/media/home/slider-1.jpg');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
@@ -24,7 +24,7 @@
                </div><!--container-->
             </div><!--/.slider-overlay-->
          </div><!--/.single-slider-->
-         <div class="single-slider-2" style="background-image: url('assets/media/home/slider-2.jpg');">
+         <div class="single-slider-2" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/media/home/slider-2.jpg');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
@@ -39,7 +39,7 @@
                </div><!--container-->
             </div><!--/.slider-overlay-->
          </div><!--/.single-slider-->
-         <div class="single-slider-3" style="background-image: url('assets/media/home/slider-3.png');">
+         <div class="single-slider-3" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/media/home/slider-3.png');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
@@ -154,15 +154,15 @@
                <div class="row no-gutters">
                   <div class="col-6">
                      <div class="single-thumb wow fadeInDown" data-wow-delay=".9s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-1.jpg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/about-1.jpg" alt="">
                      </div>
                      <div class="single-thumb wow fadeInUp" data-wow-delay="1.2s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-2.jpg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/about-2.jpg" alt="">
                      </div>
                   </div>
                   <div class="col-6">
                      <div class="single-thumb wow fadeInRight" data-wow-delay="1.5s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-3.jpeg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/about-3.jpeg" alt="">
                      </div>
                   </div>
                </div>
@@ -459,7 +459,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-1.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/doctor-1.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -535,7 +535,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-2.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/doctor-2.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +611,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-3.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/doctor-3.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -703,7 +703,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-1.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/client-1.png" />
                <h3 class="name">Albert Sinelly</h3>
                <h4 class="job">Founder Of Devoker Company</h4>
             </div>
@@ -714,7 +714,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-2.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/client-2.png" />
                <h3 class="name">Hirok Meryam</h3>
                <h4 class="job">Product Manager</h4>
             </div>
@@ -725,7 +725,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-3.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/client-3.png" />
                <h3 class="name">Sebastian Sert</h3>
                <h4 class="job">Co-Founder</h4>
             </div>
@@ -748,7 +748,7 @@
                   <div class="img-wrapper">
                      <a href="blog-details.html">
                         <img class="img-fluid"
-                           src="https://images.pexels.com/photos/3769151/pexels-photo-3769151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                           src="<?php echo get_template_directory_uri()?>/assets/media/home/blog.webp"
                            alt="">
                      </a>
                      <div class="text-box">
@@ -770,7 +770,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog2.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/blog2.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -788,7 +788,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog3.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/blog3.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -806,7 +806,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog4.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/blog4.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -835,28 +835,28 @@
             <div class="clients-member  wow fadeInDown" data-wow-duration=".9s" data-wow-delay=".9s">
                <a href="#" target="_blank">
                   <div class="clients-photo">
-                     <img class="img-fluid" src="assets/media/home/brand1.png" alt="Member">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/brand1.png" alt="Member">
                   </div><!--/.member-photo-->
                </a>
             </div><!--/.team-member-->
             <div class="clients-member">
                <a href="#" target="_blank">
                   <div class="clients-photo">
-                     <img class="img-fluid" src="assets/media/home/brand2.png" alt="Member">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/brand2.png" alt="Member">
                   </div><!--/.member-photo-->
                </a>
             </div><!--/.team-member-->
             <div class="clients-member">
                <a href="#" target="_blank">
                   <div class="clients-photo">
-                     <img class="img-fluid" src="assets/media/home/brand3.png" alt="Member">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/brand3.png" alt="Member">
                   </div><!--/.member-photo-->
                </a>
             </div><!--/.team-member-->
             <div class="clients-member">
                <a href="#" target="_blank">
                   <div class="clients-photo">
-                     <img class="img-fluid" src="assets/media/home/brand4.png" alt="Member">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/home/brand4.png" alt="Member">
                   </div><!--/.member-photo-->
                </a>
             </div><!--/.team-member-->

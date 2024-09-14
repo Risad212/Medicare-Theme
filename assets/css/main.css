@@ -65,6 +65,13 @@ h6 {
   font-family: Montserrat;
 }
 
+span,
+p,
+ul,
+li,
+a {
+  font-family: Poppins;
+}
 /*------- primary color -------*/
 :root {
   --primary-color: #05d3b0;
@@ -85,7 +92,7 @@ a {
 }
 
 ul {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   list-style: none;
 }
@@ -104,7 +111,9 @@ address {
 }
 
 ul {
-  list-style: none;
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
   color: #777;
 }
 

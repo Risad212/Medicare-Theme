@@ -4,8 +4,8 @@
          <div class="row gy-4 footer-content">
             <div class="col-lg-3">
                <div class="footer-widget-1">
-                  <a href="#">
-                     <img class="img-fluid" src="assets/media/common/logo.png" alt="">
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/common/logo.png" alt="">
                   </a>
                   <p>Our Clinic has grown to provide a world class facility for the clinic advanced restorative.
                      We are among the most qualified implant providers in the AUS with over 30 years of quality training
