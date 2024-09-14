@@ -138,6 +138,58 @@ add_action( 'widgets_init', 'medicare_widgets_init' );
  * Enqueue scripts and styles.
  */
 function medicare_scripts() {
+	
+   //================== css style ==================//
+
+	// Bootstrap css
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri(). '/assets/css/bootstrap.min.css', array(), _S_VERSION, 'all' );
+
+	// owl carousel css
+	wp_enqueue_style( 'owl-carousel', get_template_directory_uri(). '/assets/css/owl.carousel.min.css', array(), _S_VERSION, 'all' );
+
+	// owl carousel theme css
+	wp_enqueue_style( 'owl-carousel-theme', get_template_directory_uri(). '/assets/css/owl.theme.default.min.css', array(), _S_VERSION, 'all' );
+
+	// Date Range Picker css
+	wp_enqueue_style( 'date-range-picker', get_template_directory_uri(). '/assets/css/daterangepicker.css', array(), _S_VERSION, 'all' );
+
+	// Date Range Picker css
+	wp_enqueue_style( 'date-range-picker', get_template_directory_uri(). '/assets/css/daterangepicker.css', array(), _S_VERSION, 'all' );
+
+	// Magnific Poupup css
+	wp_enqueue_style( 'magnific-popup', get_template_directory_uri(). '/assets/css/magnific-popup.css', array(), _S_VERSION, 'all' );
+
+	// Main Css
+	wp_enqueue_style( 'main', get_template_directory_uri(). '/assets/css/main.css', array(), _S_VERSION, 'all' );
+
+    //================== Js Scripts ==================//
+
+	// Bootstrap Js
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), _S_VERSION, true );
+
+	// Owl carousel
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), _S_VERSION, true );
+
+	// parallax100 js 
+	wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/js/parallax100.js', array('jquery'), _S_VERSION, true );
+
+	// waypoints js
+	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints.js', array('jquery'), _S_VERSION, true );
+
+	
+	// counter up js
+	wp_enqueue_script( 'counterup', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array('jquery'), _S_VERSION, true );
+
+	// date range picker js
+	wp_enqueue_script( 'daterangepicker', get_template_directory_uri() . '/assets/js/daterangepicker.min.js', array('jquery'), _S_VERSION, true );
+
+	// moment js
+	wp_enqueue_script( 'moment', get_template_directory_uri() . '/assets/js/moment.min.js', array('jquery'), _S_VERSION, true );
+
+	 // main Js
+	 wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), _S_VERSION, true );
+
+   /*----------------------*/
 	wp_enqueue_style( 'medicare-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'medicare-style', 'rtl', 'replace' );
 
