@@ -16,15 +16,15 @@
                <div class="row no-gutters">
                   <div class="col-6">
                      <div class="single-thumb wow fadeInDown" data-wow-delay=".9s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-1.jpg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/about-1.jpg" alt="">
                      </div>
                      <div class="single-thumb wow fadeInUp" data-wow-delay="1.2s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-2.jpg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/about-2.jpg" alt="">
                      </div>
                   </div>
                   <div class="col-6">
                      <div class="single-thumb wow fadeInRight" data-wow-delay="1.5s" data-wow-duration=".9s">
-                        <img class="lazy img-fluid" src="assets/media/home/about-3.jpeg" alt="">
+                        <img class="lazy img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/about-3.jpeg" alt="">
                      </div>
                   </div>
                </div>

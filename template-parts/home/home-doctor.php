@@ -8,7 +8,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-1.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/doctor-1.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-2.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/doctor-2.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@
             <div class="col-lg-4">
                <div class="doctor-card">
                   <div class="card-img">
-                     <img class="img-fluid" src="assets/media/home/doctor-3.png" alt="">
+                     <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/doctor-3.png" alt="">
                      <ul class="social-media">
                         <li class="item"><a href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"

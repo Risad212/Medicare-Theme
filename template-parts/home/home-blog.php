@@ -12,7 +12,7 @@
                   <div class="img-wrapper">
                      <a href="blog-details.html">
                         <img class="img-fluid"
-                           src="https://images.pexels.com/photos/3769151/pexels-photo-3769151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                           src="<?php echo get_template_directory_uri() ?>/assets/media/home/blog.webp"
                            alt="">
                      </a>
                      <div class="text-box">
@@ -34,7 +34,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog2.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/blog2.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -52,7 +52,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog3.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/blog3.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -70,7 +70,7 @@
                         <div class="box">
                            <div class="img-wrapper">
                               <a href="blog-details.html">
-                                 <img class="img-fluid" src="assets/media/home/blog4.jpg" alt="">
+                                 <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/blog4.jpg" alt="">
                               </a>
                            </div>
                         </div>

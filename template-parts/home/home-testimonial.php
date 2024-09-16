@@ -12,7 +12,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-1.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/client-1.png" />
                <h3 class="name">Albert Sinelly</h3>
                <h4 class="job">Founder Of Devoker Company</h4>
             </div>
@@ -23,7 +23,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-2.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/client-2.png" />
                <h3 class="name">Hirok Meryam</h3>
                <h4 class="job">Product Manager</h4>
             </div>
@@ -34,7 +34,7 @@
                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat.
                </p>
-               <img class="img-fluid" src="assets/media/home/client-3.png" />
+               <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/media/home/client-3.png" />
                <h3 class="name">Sebastian Sert</h3>
                <h4 class="job">Co-Founder</h4>
             </div>

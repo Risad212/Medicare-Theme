@@ -1,6 +1,6 @@
 <section class="slider-section">
       <div class="carousel-single-item owl-carousel owl-theme">
-         <div class="single-slider" style="background-image: url('assets/media/home/slider-1.jpg');">
+         <div class="single-slider" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/media/home/slider-1.jpg');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
@@ -15,7 +15,7 @@
                </div><!--container-->
             </div><!--/.slider-overlay-->
          </div><!--/.single-slider-->
-         <div class="single-slider-2" style="background-image: url('assets/media/home/slider-2.jpg');">
+         <div class="single-slider-2" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/media/home/slider-2.jpg');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
@@ -30,7 +30,7 @@
                </div><!--container-->
             </div><!--/.slider-overlay-->
          </div><!--/.single-slider-->
-         <div class="single-slider-3" style="background-image: url('assets/media/home/slider-3.png');">
+         <div class="single-slider-3" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/media/home/slider-3.png');">
             <div class="slider-overlay">
                <div class="container">
                   <div class="title">
