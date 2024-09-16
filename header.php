@@ -150,7 +150,7 @@
                   </div>
                </div>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+            <div class="collapse navbar-collapse" id="navbar-content">
                <?php 
                   wp_nav_menu( array(
                      'theme_location' => 'primary-menu',
