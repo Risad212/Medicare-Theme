@@ -156,6 +156,12 @@ function medicare_scripts() {
 	// Date Range Picker css
 	wp_enqueue_style( 'date-range-picker', get_template_directory_uri(). '/assets/css/daterangepicker.css', array(), _S_VERSION, 'all' );
 
+	// font awesome all css
+	wp_enqueue_style( 'font-awesome-all-css', get_template_directory_uri(). '/assets/css/all.min.css', array(), _S_VERSION, 'all' );
+
+	// font awesome css
+	wp_enqueue_style( 'font-awesome-css', get_template_directory_uri(). '/assets/css/fontawesome.min.css', array(), _S_VERSION, 'all' );
+
 	// Magnific Poupup css
 	wp_enqueue_style( 'magnific-popup', get_template_directory_uri(). '/assets/css/magnific-popup.css', array(), _S_VERSION, 'all' );
 

@@ -55,4 +55,47 @@ if(class_exists('CSF')){
     ) );
 
 
+    // Hero Slider Section
+    CSF::createSection( $prefix, array(
+      'title'  => __('Slider Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        
+      array(
+          'id'     => 'slider-list',
+          'type'   => 'repeater',
+          'title'  => __('Slider Single','medicare'),
+          'fields' => array(
+        
+            array(
+              'id'    => 'slider-image',
+              'type'  => 'media',
+              'title' => __('Slider Title','medicare'),
+            ),
+
+            array(
+              'id'    => 'slider-title',
+              'type'  => 'text',
+              'title' => __('Slider Title','medicare'),
+            ),
+
+            array(
+              'id'    => 'slider-disc',
+              'type'  => 'textarea',
+              'title' => __('Slider Discription','medicare'),
+            ),
+
+            array(
+              'id'    => 'slider-button',
+              'type'  => 'link',
+              'title' => __('Slider Button','medicare'),
+            ),
+        
+          ),
+        ),
+  
+      )
+  ) );
+
+
 }

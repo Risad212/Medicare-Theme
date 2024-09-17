@@ -286,16 +286,20 @@ input:-webkit-autofill:focus {
 
 .topbar .topbar-wrap .topbar-right .socail-list .item {
   background: #03856f;
-  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: none;
   margin-right: 15px;
   transition: all 500ms;
 }
 
-.topbar .topbar-wrap .topbar-right .socail-list .item svg {
-  fill: #fff;
-  width: 14px;
+.topbar .topbar-wrap .topbar-right .socail-list .item i {
+  color: #fff;
+  font-size: 13px;
 }
 
 .topbar .topbar-wrap .topbar-right .socail-list .item:first-child:hover {
