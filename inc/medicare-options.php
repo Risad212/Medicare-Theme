@@ -52,8 +52,7 @@ if(class_exists('CSF')){
           ),
     
         )
-    ) );
-
+    ));
 
     // Hero Slider Section
     CSF::createSection( $prefix, array(
@@ -61,7 +60,7 @@ if(class_exists('CSF')){
       'icon'      => 'fa fa-rocket',
       'fields' => array(
         
-      array(
+       array(
           'id'     => 'slider-list',
           'type'   => 'repeater',
           'title'  => __('Slider Single','medicare'),
@@ -70,7 +69,7 @@ if(class_exists('CSF')){
             array(
               'id'    => 'slider-image',
               'type'  => 'media',
-              'title' => __('Slider Title','medicare'),
+              'title' => __('Slider Image','medicare'),
             ),
 
             array(
@@ -95,7 +94,56 @@ if(class_exists('CSF')){
         ),
   
       )
-  ) );
+    ));
 
+
+     // About Section
+    CSF::createSection( $prefix, array(
+      'title'  => __('About Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        
+        array(
+          'id'    => 'about-title',
+          'type'  => 'text',
+          'title' => __('About Title','medicare'),
+        ),
+
+        array(
+          'id'    => 'about-disc',
+          'type'  => 'textarea',
+          'title' => __('About Discription','medicare'),
+        ),
+
+        array(
+          'id'    => 'about-btn',
+          'type'  => 'link',
+          'title' => __('About Button','medicare'),
+        ),
+
+        array(
+          'id'    => 'about-large-image',
+          'type'  => 'media',
+          'title' => __('About Large Image','medicare'),
+        ),
+
+
+        array(
+          'id'     => 'about-list',
+          'type'   => 'repeater',
+          'title'  => __('About List Image', 'medicare'),
+          'fields' => array(
+        
+            array(
+              'id'    => 'about-img',
+              'type'  => 'media',
+              'title' => __('About Image','medicare'),
+            ),
+        
+          ),
+        ),
+  
+       )
+    ));
 
 }
