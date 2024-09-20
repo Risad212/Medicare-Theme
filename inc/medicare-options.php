@@ -11,7 +11,6 @@ if(class_exists('CSF')){
         'framework_title' => __('Medicare Options', 'medicare'),
     ) );
 
-
     // header section
     CSF::createSection( $prefix, array(
         'title'  => __('Header Section', 'medicare'),
@@ -237,6 +236,27 @@ if(class_exists('CSF')){
             ),
         
           ),
+        ),
+        
+      )
+     ));
+
+     // Doctor Section
+     CSF::createSection($prefix, array(
+      'title'  => __('Doctor Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        
+        array(
+          'id'    => 'doctor-subtitle',
+          'type'  => 'text',
+          'title' => __('Doctor Subtitle', 'medicare'),
+        ),
+
+        array(
+          'id'    => 'doctor-title',
+          'type'  => 'text',
+          'title' => __('Doctor title', 'medicare'),
         ),
         
       )

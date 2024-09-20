@@ -21,9 +21,9 @@
                      $query->the_post();
                      $services = get_post_meta( get_the_ID(), 'medicare-metabox', true );
                      $service_icon = $services['service-icon'];
-               ?>
+                ?>
                 <div class="col-lg-4">
-               <div class="service-card">
+                 <div class="service-card">
                   <span class="icon">
                      <i class="<?php echo $service_icon ?>"></i>
                   </span>

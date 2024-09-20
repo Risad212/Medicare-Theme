@@ -93,7 +93,7 @@ function medicare_doctor_cpt() {
 		'label'                 => __( 'Doctor', 'medicare' ),
 		'description'           => __( 'Doctor description', 'medicare' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
