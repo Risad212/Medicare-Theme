@@ -146,4 +146,22 @@ if(class_exists('CSF')){
        )
     ));
 
+
+     // Services Section
+     CSF::createSection($prefix, array(
+      'title'  => __('Service Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        array(
+          'id'    => 'service-subtitle',
+          'type'  => 'text',
+          'title' => __('Service Sub Title','medicare'),
+        ),
+        array(
+          'id'    => 'service-title',
+          'type'  => 'text',
+          'title' => __('Service Title','medicare'),
+        ),
+      )
+     ));
 }

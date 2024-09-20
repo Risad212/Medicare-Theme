@@ -13,7 +13,7 @@
          <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                <div class="sotry-content">
-                  <h3 class="title"><?php echo $about_title ?></h3>
+                  <h3 class="title"><?php echo $about_title?? '' ?></h3>
                   <p class="mb-2"><?php echo $about_disc ?></p>
                   <a class="about-btn" href="<?php echo $about_btn_link ?>"><?php echo $about_btn_text ?></a>
                </div>

@@ -239,3 +239,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Custom Options
  */
 require get_template_directory() . '/inc/medicare-options.php';
+
+
+/**
+ * Custom Post Type
+ */
+require get_template_directory() . '/inc/medicare-cpt.php';
+
+
+/**
+ * Meta box
+ */
+require get_template_directory() . '/inc/medicare-metabox.php';
