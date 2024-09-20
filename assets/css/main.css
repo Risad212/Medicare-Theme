@@ -808,8 +808,8 @@ input:-webkit-autofill:focus {
   background: var(--primary-color);
 }
 
-.feature-card:hover .icon svg {
-  fill: #fff;
+.feature-card:hover .icon i {
+  color: #fff;
 }
 
 .feature-card:hover .title,
@@ -817,10 +817,9 @@ input:-webkit-autofill:focus {
   color: #fff;
 }
 
-.feature-card .icon svg {
-  fill: var(--primary-color);
-  width: 55px;
-  height: 55px;
+.feature-card .icon i {
+  color: var(--primary-color);
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
@@ -993,10 +992,9 @@ input:-webkit-autofill:focus {
   transition: 0.4s;
 }
 
-.service-card .icon svg {
-  width: 64px;
-  height: 64px;
-  fill: var(--primary-color);
+.service-card .icon i {
+  font-size: 50px;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -1025,8 +1023,8 @@ input:-webkit-autofill:focus {
   color: #fff;
 }
 
-.service-card:hover .icon svg {
-  fill: #fff;
+.service-card:hover .icon i {
+  color: #fff;
 }
 
 .service-card:hover .card-btn {
@@ -1047,11 +1045,6 @@ input:-webkit-autofill:focus {
              COUNTER SECTION
 ==================================================*/
 #counter {
-  background-image: linear-gradient(
-      rgba(41, 41, 41, 0.752),
-      rgba(29, 29, 29, 0.73)
-    ),
-    url("../media/home/counter-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px 0;
@@ -1101,13 +1094,13 @@ input:-webkit-autofill:focus {
 }
 
 #counter .item .icon span,
-#counter .item .icon svg {
+#counter .item .icon i {
   position: absolute;
   width: 80%;
   height: 80%;
-  line-height: 80px;
-  padding: 15px;
-  fill: #fff;
+  font-size: 35px;
+  line-height: 70px;
+  color: #fff;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   top: 50%;

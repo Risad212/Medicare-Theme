@@ -97,6 +97,42 @@ if(class_exists('CSF')){
     ));
 
 
+    // Feature Section
+    CSF::createSection( $prefix, array(
+      'title'  => __('Feature Section', 'medicare'),
+      'icon'   => 'fa fa-rocket',
+      'fields' => array (
+          
+        array(
+          'id'     => 'feature-list',
+          'type'   => 'repeater',
+          'title'  => __('Feature List', 'medicare'),
+          'fields' => array(
+        
+            array(
+              'id'    => 'feature-icon',
+              'type'  => 'icon',
+              'title' => __('Feature Icon', 'medicare'),
+            ),
+
+            array(
+              'id'    => 'feature-title',
+              'type'  => 'text',
+              'title' => __('Feature Title', 'medicare'),
+            ),
+
+            array(
+              'id'    => 'feature-disc',
+              'type'  => 'textarea',
+              'title' => __('Feature Discription', 'medicare'),
+            ),
+        
+          ),
+        ),
+
+      )
+    ));
+
      // About Section
     CSF::createSection( $prefix, array(
       'title'  => __('About Section', 'medicare'),
@@ -164,4 +200,85 @@ if(class_exists('CSF')){
         ),
       )
      ));
+
+     // Counter Section
+     CSF::createSection($prefix, array(
+      'title'  => __('Counter Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        
+        array(
+          'id'    => 'counter-bg',
+          'type'  => 'background',
+          'title' => __('Counter Background Image', 'medicare'),
+          'background_color' => false
+        ),
+
+        array(
+          'id'     => 'counter-list',
+          'type'   => 'repeater',
+          'title'  => __('Counter List', 'medicare'),
+          'fields' => array(
+        
+            array(
+              'id'    => 'counter-icon',
+              'type'  => 'icon',
+              'title' => __('Counter Icon','medicare'),
+            ),
+
+            array(
+              'id'    => 'counter-number',
+              'type'  => 'number',
+              'title' => __('Counter Number','medicare'),
+            ),
+
+            array(
+              'id'    => 'counter-title',
+              'type'  => 'text',
+              'title' => __('Counter Title','medicare'),
+            ),
+        
+          ),
+        ),
+        
+      )
+     ));
+
+
+     // Sister Concern Section
+     CSF::createSection($prefix, array(
+      'title'  => __('Sister Concern Section', 'medicare'),
+      'icon'      => 'fa fa-rocket',
+      'fields' => array(
+        
+        array(
+          'id'    => 'sister-concern-subtitle',
+          'type'  => 'text',
+          'title' => __('Sister Concern SubTitle','medicare'),
+        ),
+
+        array(
+          'id'    => 'sister-concern-title',
+          'type'  => 'text',
+          'title' => __('Sister Concern Title','medicare'),
+        ),
+
+        array(
+          'id'     => 'sister-concern-list',
+          'type'   => 'repeater',
+          'title'  => __('Sister Concern List', 'medicare'),
+          'fields' => array(
+
+            array(
+              'id'    => 'sister-concern-img',
+              'type'  => 'media',
+              'title' => __('Sister Concern Image','medicare'),
+            ),
+          ),
+        ),
+        
+      )
+     ));
 }
+
+
