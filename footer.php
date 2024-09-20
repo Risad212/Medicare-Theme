@@ -192,7 +192,7 @@
          </div>
          <div class="copay-write">
             <span class="text">© Copyright by Medicare</span>
-            <span class="text">Design & Developed by Bongosoft Ltd.</span>
+            <span class="text">Design & Developed by Risad</span>
          </div>
       </div>
    </footer>

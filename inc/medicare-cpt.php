@@ -2,7 +2,6 @@
 
 // Register Custom Post Type For Services
 function medicare_cpt() {
-
 	$labels = array(
 		'name'                  => _x( 'Services', 'Post Type General Name', 'medicare' ),
 		'singular_name'         => _x( 'Service', 'Post Type Singular Name', 'medicare' ),
@@ -55,3 +54,61 @@ function medicare_cpt() {
 
 }
 add_action( 'init', 'medicare_cpt', 0 );
+
+
+//*------------------------------------------------
+
+// Register Custom Post Type For Doctors
+function medicare_doctor_cpt() {
+	$labels = array(
+		'name'                  => _x( 'Doctors', 'Post Type General Name', 'medicare' ),
+		'singular_name'         => _x( 'Doctor', 'Post Type Singular Name', 'medicare' ),
+		'menu_name'             => __( 'Doctors', 'medicare' ),
+		'name_admin_bar'        => __( 'Post Type', 'medicare' ),
+		'archives'              => __( 'Item Archives', 'medicare' ),
+		'attributes'            => __( 'Item Attributes', 'medicare' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'medicare' ),
+		'all_items'             => __( 'All Doctors', 'medicare' ),
+		'add_new_item'          => __( 'Add New Doctor', 'medicare' ),
+		'add_new'               => __( 'Add New Doctor', 'medicare' ),
+		'new_item'              => __( 'New Doctor', 'medicare' ),
+		'edit_item'             => __( 'Edit Doctor', 'medicare' ),
+		'update_item'           => __( 'Update Doctor', 'medicare' ),
+		'view_item'             => __( 'View Doctor', 'medicare' ),
+		'view_items'            => __( 'View Doctors', 'medicare' ),
+		'search_items'          => __( 'Search Doctor', 'medicare' ),
+		'not_found'             => __( 'Not found Doctor', 'medicare' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'medicare' ),
+		'featured_image'        => __( 'Doctor Image', 'medicare' ),
+		'set_featured_image'    => __( 'Set Doctor image', 'medicare' ),
+		'remove_featured_image' => __( 'Remove Doctor image', 'medicare' ),
+		'use_featured_image'    => __( 'Use as Doctor image', 'medicare' ),
+		'insert_into_item'      => __( 'Insert into Doctor', 'medicare' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'medicare' ),
+		'items_list'            => __( 'Items list', 'medicare' ),
+		'items_list_navigation' => __( 'Items list navigation', 'medicare' ),
+		'filter_items_list'     => __( 'Filter items list', 'medicare' ),
+	);
+	$args = array(
+		'label'                 => __( 'Doctor', 'medicare' ),
+		'description'           => __( 'Doctor description', 'medicare' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Doctors', $args );
+
+}
+add_action( 'init', 'medicare_doctor_cpt', 0 );

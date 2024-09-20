@@ -248,6 +248,6 @@ require get_template_directory() . '/inc/medicare-cpt.php';
 
 
 /**
- * Meta box
+ * Metabox
  */
 require get_template_directory() . '/inc/medicare-metabox.php';

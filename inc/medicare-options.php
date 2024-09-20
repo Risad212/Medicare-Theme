@@ -96,7 +96,6 @@ if(class_exists('CSF')){
       )
     ));
 
-
     // Feature Section
     CSF::createSection( $prefix, array(
       'title'  => __('Feature Section', 'medicare'),
@@ -182,7 +181,6 @@ if(class_exists('CSF')){
        )
     ));
 
-
      // Services Section
      CSF::createSection($prefix, array(
       'title'  => __('Service Section', 'medicare'),
@@ -243,6 +241,59 @@ if(class_exists('CSF')){
         
       )
      ));
+
+      // Testimonial Section
+      CSF::createSection($prefix, array(
+        'title'  => __('Testimonial Section', 'medicare'),
+        'icon'      => 'fa fa-rocket',
+        'fields' => array(
+          
+          array(
+            'id'    => 'testimonial-subtitle',
+            'type'  => 'text',
+            'title' => __('testimonial SubTitle','medicare'),
+          ),
+  
+          array(
+            'id'    => 'testimonial-title',
+            'type'  => 'text',
+            'title' => __('testimonial Title','medicare'),
+          ),
+  
+          array(
+            'id'     => 'testimonial-list',
+            'type'   => 'repeater',
+            'title'  => __('testimonial List', 'medicare'),
+            'fields' => array(
+  
+              array(
+                'id'    => 'testimonial-review',
+                'type'  => 'textarea',
+                'title' => __('Testimonial Review','medicare'),
+              ),
+
+              array(
+                'id'    => 'reviewer-img',
+                'type'  => 'media',
+                'title' => __('Reviewer Image','medicare'),
+              ),
+
+              array(
+                'id'    => 'reviewer-name',
+                'type'  => 'text',
+                'title' => __('Reviewer Name','medicare'),
+              ),
+
+              array(
+                'id'    => 'reviewer-designation',
+                'type'  => 'text',
+                'title' => __('Testimonial designation','medicare'),
+              ),
+            ),
+          ),
+          
+        )
+       ));
 
 
      // Sister Concern Section

@@ -11,7 +11,6 @@ if(class_exists('CSF')){
     'post_type' => 'services',
   ) );
 
-
   // Create a section
   CSF::createSection( $prefix, array(
     'title'  => __('Services Single', 'medicare'),
@@ -22,7 +21,14 @@ if(class_exists('CSF')){
             'type'  => 'icon',
             'title' => 'Service Icon',
           ),
-
     )
   ) );
+
+
+    // Create a Doctors Metabox
+    CSF::createMetabox( $prefix, array(
+      'title'  => __('Doctors', 'medicare'),
+      'post_type' => 'doctors',
+    ) );
+
 }
