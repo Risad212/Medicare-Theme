@@ -2194,7 +2194,6 @@ input:-webkit-autofill:focus {
 .contact-page .form form input,
 .contact-page .form form textarea {
   width: 100%;
-  height: 45px;
   padding: 0 15px;
   font-weight: 500;
   font-size: 13px;
@@ -2203,12 +2202,19 @@ input:-webkit-autofill:focus {
   border: 1px solid #ddd;
 }
 
+.contact-page .form input {
+  height: 45px;
+}
+
 .contact-page .form form textarea {
   padding: 15px;
+  height: 170px;
 }
 
 .contact-page .form-button {
   font-size: 12px;
+  width: 200px !important;
+  height: 60px !important;
   background: var(--primary-color);
   color: #fff;
   font-weight: 700;
@@ -2216,7 +2222,7 @@ input:-webkit-autofill:focus {
   border-radius: 8px;
   display: inline-block;
   text-transform: uppercase;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color) !important;
   margin-bottom: 5px;
   letter-spacing: 2px;
   transition: 0.4s;

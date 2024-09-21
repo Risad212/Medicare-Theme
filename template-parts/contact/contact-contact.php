@@ -30,7 +30,8 @@
       </div>
       <div class="col-lg-6">
         <div class="form">
-          <form class="mt-3">
+          <?php echo do_shortcode('[contact-form-7 id="04590d6" title="Contact Form"]') ?>
+          <!-- <form class="mt-3">
             <div class="row">
               <div class="col-lg-6">
                 <div class="mb-3">
@@ -73,7 +74,7 @@
               </div>
             </div>
             <button type="submit" class="form-button">Send Message</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
