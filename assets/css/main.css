@@ -2315,6 +2315,7 @@ input:-webkit-autofill:focus {
 .appoinment-page .form-wrap {
   background: #e2f4f1;
   padding: 50px;
+  padding-bottom: 5px;
   width: 50%;
   margin: auto;
 }

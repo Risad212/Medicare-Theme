@@ -1,6 +1,6 @@
 <section class="appoinment-page">
       <div class="container">
-        <div class="form-wrap">
+        <!-- <div class="form-wrap">
           <div class="mb-4">
             <input type="text" id="appoinment_name" placeholder="Your Name" />
           </div>
@@ -51,6 +51,7 @@
           <div class="text-center">
             <button class="appoinment-btn">submit</button>
           </div>
-        </div>
+        </div> -->
+        <?php echo do_shortcode('[contact-form-7 id="f1ad184" title="Appointment Form"]')?>
       </div>
     </section>
