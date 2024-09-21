@@ -963,3 +963,59 @@ textarea {
   margin-right: auto;
   margin-bottom: 1.5em;
 }
+
+/*============= Service Details =====================*/
+
+.custom-service-title {
+  font-size: 22px;
+  font-family: "NikoshBAN";
+}
+
+.custom-service-description {
+  margin-left: 0.5in;
+  margin-right: 0;
+  font-size: 22px;
+  font-family: "NikoshBAN";
+}
+
+.custom-service-item {
+  font-size: 22px;
+  font-family: "NikoshBAN";
+}
+
+.recent-post {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.recent-post .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.recent-post .single-post {
+  margin-bottom: 10px;
+}
+
+.recent-post .recent-posts-info {
+  /* Optional: Add styles for post info */
+}
+
+.recent-post .post-title {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recent-post .post-title a {
+  color: inherit;
+  text-decoration: none !important;
+  color: #000;
+}
+
+.recent-post .post-title a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
