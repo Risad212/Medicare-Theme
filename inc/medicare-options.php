@@ -593,6 +593,35 @@ if(class_exists('CSF')){
           ) 
         ));
 
+        // Blog Details Social links
+        CSF::createSection($prefix, array(
+          'title'  => __('Blog Details Social link', 'medicare'),
+         'icon'      => 'fa fa-rocket',
+         'fields' =>   array(
+
+           array(
+             'id'     => 'blog-details-social',
+             'type'   => 'repeater',
+             'title'  => __('Blog Details Social', 'medicare'),
+             'fields' => array(
+  
+               array(
+                 'id'    => 'blog-details-social-icon',
+                 'type'  => 'icon',
+                 'title' => __('Social icon', 'medicare'),
+               ),
+
+               array(
+                'id'    => 'blog-details-social-link',
+                'type'  => 'link',
+                'title' => __('Social link', 'medicare'),
+              ),
+           
+             ),
+           ),
+         ) 
+       ));
+
 }
 
 
