@@ -15,4 +15,8 @@ get_header();?>
 <?php get_template_part('template-parts/servicedetails/servicedetails', 'details')?>
 
 
+<!--========== Service Details Section ==========-->
+<?php get_template_part('template-parts/service/service', 'emargency')?>
+
+
 <?php get_footer()?>
