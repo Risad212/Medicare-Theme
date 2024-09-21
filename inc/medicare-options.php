@@ -558,6 +558,7 @@ if(class_exists('CSF')){
            'title'  => __('Contact Section', 'medicare'),
           'icon'      => 'fa fa-rocket',
           'fields' =>   array(
+
             array(
               'id'     => 'contact-info',
               'type'   => 'repeater',
@@ -583,6 +584,11 @@ if(class_exists('CSF')){
                 ),
             
               ),
+            ),
+            array(
+              'id'    => 'contact-map',
+              'type'  => 'map',
+              'title' => __('Contact Map', 'medicare'),
             ),
           ) 
         ));
