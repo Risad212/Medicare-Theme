@@ -261,7 +261,7 @@ if(class_exists('CSF')){
         
       )
      ));
-
+     
       // Testimonial Section
       CSF::createSection($prefix, array(
         'title'  => __('Testimonial Section', 'medicare'),
@@ -350,6 +350,8 @@ if(class_exists('CSF')){
         
       )
      ));
+
+  
 }
 
 
