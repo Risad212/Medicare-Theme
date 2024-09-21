@@ -1,28 +1,38 @@
+<?php 
+  $options = get_option( 'medicare-options' ); 
+  $about_page_circle_image = $options['about-circle-img']['url'];
+  $about_page_small_image = $options['about-small-img']['url'];;
+  $about_page_large_image = $options['about-large-img']['url'];;
+  $about_page_subtitle = $options['about-page-subtitle'];
+  $about_page_title = $options['about-page-title'];
+  $about_page_disc = $options['about-page-disc'];
+  $about_btn_text = $options['about-page-btn']['text'];
+  $about_btn_link = $options['about-page-btn']['url'];
+?>
+
+
 <div class="about-hospital">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-image">
                         <div class="circle">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/media/about/circle.png" alt="">
+                            <img src="<?php echo $about_page_circle_image ?>" alt="">
                         </div>
                         <div class="first-img">
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/about/about-1.jpg" alt="">
+                            <img class="img-fluid" src="<?php echo $about_page_small_image ?>" alt="">
                         </div>
                         <div class="second-img">
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/media/about/about-2.jpg" alt="">
+                            <img class="img-fluid" src="<?php echo  $about_page_large_image ?>" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h6 class="subtitle">about us</h6>
-                        <h2 class="title">Compassionate Care Exceptional Expertise</h2>
-                        <span class="text">The field where technology meets humanity</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis consectetur quis
-                            deleniti, at debitis earum illo tempore molestias in eaque, architecto reiciendis assumenda
-                            sapiente? Sit autem suscipit qui tenetur!</p>
-                        <button class="about-btn"><a href="#">more info</a> <svg xmlns="http://www.w3.org/2000/svg"
+                        <h6 class="subtitle"><?php echo  $about_page_subtitle ?></h6>
+                        <h2 class="title"><?php echo  $about_page_title ?></h2>
+                        <p><?php echo  $about_page_disc ?></p>
+                        <button class="about-btn"><a href="<?php echo $about_btn_link ?>"><?php echo  $about_btn_text ?></a> <svg xmlns="http://www.w3.org/2000/svg"
                                 version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0"
                                 y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
                                 xml:space="preserve" class="">

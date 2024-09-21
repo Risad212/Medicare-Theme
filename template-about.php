@@ -15,9 +15,9 @@
 <?php get_template_part('template-parts/about/about', 'mission')?>
 
 <!--============== TESTIMONIAL SECTION ===============-->
-<?php get_template_part('template-parts/about/about', 'testimonial')?>
+<?php get_template_part('template-parts/section/section', 'testimonial')?>
 
 <!--============== DOCTORS SECTION ===============-->
-<?php get_template_part('template-parts/about/about', 'doctor')?>
+<?php get_template_part('template-parts/section/section', 'doctor') ?>
 
 <?php get_footer();?>

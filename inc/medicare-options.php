@@ -364,6 +364,229 @@ if(class_exists('CSF')){
         )
       ));
 
+      /*=========================== About Page ==========================*/
+
+      // About Hospital Section 
+      CSF::createSection($prefix, array(
+         'title'  => __('About Hospital Section', 'medicare'),
+         'icon'      => 'fa fa-rocket',
+         'fields' =>  array(
+
+            array(
+              'id'    => 'about-circle-img',
+              'type'  => 'media',
+              'title' => __('About Circle Image','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-small-img',
+              'type'  => 'media',
+              'title' => __('About Small Image','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-large-img',
+              'type'  => 'media',
+              'title' => __('About Large Image','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-page-subtitle',
+              'type'  => 'text',
+              'title' => __('About Page Subtitle','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-page-title',
+              'type'  => 'text',
+              'title' => __('About Page Title','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-page-disc',
+              'type'  => 'textarea',
+              'title' => __('About Page Discription','medicare'),
+            ),
+
+            array(
+              'id'    => 'about-page-btn',
+              'type'  => 'link',
+              'title' => __('About Page Button','medicare'),
+            ),
+  
+         )
+      ));
+
+      // About Mission 
+      CSF::createSection($prefix, array(
+        'title'  => __('About Mission Section', 'medicare'),
+        'icon'      => 'fa fa-rocket',
+        'fields' => array(
+          array(
+            'id'     => 'about-mission',
+            'type'   => 'repeater',
+            'title'  => __('About Mission Card', 'medicare'),
+            'fields' => array(
+          
+              array(
+                'id'    => 'about-mission-title',
+                'type'  => 'text',
+                'title' => __('About Mission Title', 'medicare')
+              ),
+
+              array(
+                'id'    => 'about-mission-disc',
+                'type'  => 'textarea',
+                'title' => __('About Mission Discription', 'medicare')
+              ),
+          
+            ),
+          ),
+          )
+        ));
+
+
+       // Emergency section
+      CSF::createSection($prefix, array(
+        'title'  => __('Emergency Section', 'medicare'),
+        'icon'      => 'fa fa-rocket',
+        'fields' => array(
+          array(
+            'id'    => 'emergency-img',
+            'type'  => 'media',
+            'title' => __('Emergency Image', 'medicare')
+           ),
+
+           array(
+            'id'    => 'emergency-subtitle',
+            'type'  => 'text',
+            'title' => __('Emergency SubTitle', 'medicare')
+           ),
+
+           array(
+            'id'    => 'emergency-title',
+            'type'  => 'text',
+            'title' => __('Emergency Title', 'medicare')
+           ),
+
+           array(
+            'id'    => 'emergency-disc',
+            'type'  => 'textarea',
+            'title' => __('Emergency Discription', 'medicare')
+           ),
+
+           array(
+            'id'     => 'emergency-info',
+            'type'   => 'repeater',
+            'title'  => 'Repeater',
+            'fields' => array(
+          
+              array(
+                'id'    => 'emergency-info-icon',
+                'type'  => 'icon',
+                'title' => __('Emergency Icon', 'medicare')
+              ),
+
+              array(
+                'id'    => 'emergency-info-title',
+                'type'  => 'text',
+                'title' => __('Emergency Title', 'medicare')
+              ),
+
+              array(
+                'id'    => 'emergency-info-text',
+                'type'  => 'text',
+                'title' => __('Emergency Info Text', 'medicare')
+              ),
+          
+            ),
+          ),
+
+          )
+        ));
+
+         // Prevention section
+         CSF::createSection($prefix, array(
+          'title'  => __('Prevention Section', 'medicare'),
+          'icon'      => 'fa fa-rocket',
+          'fields' =>   array(
+            array(
+              'id'    => 'prevention-subtitle',
+              'type'  => 'text',
+              'title' => __('Prevention SubTitle', 'medicare')
+             ),
+  
+             array(
+              'id'    => 'prevention-title',
+              'type'  => 'text',
+              'title' => __('Prevention Title', 'medicare')
+             ),
+
+             array(
+              'id'     => 'prevention-list',
+              'type'   => 'repeater',
+              'title'  => __('Prevention List', 'medicare'),
+              'fields' => array(
+            
+                array(
+                  'id'    => 'prevention-icon',
+                  'type'  => 'icon',
+                  'title' => __('Prevention Icon', 'medicare'),
+                ),
+
+                array(
+                  'id'    => 'prevention-title',
+                  'type'  => 'text',
+                  'title' => __('Prevention Title', 'medicare'),
+                ),
+
+                array(
+                  'id'    => 'prevention-disc',
+                  'type'  => 'textarea',
+                  'title' => __('Prevention Discription', 'medicare'),
+                ),
+            
+              ),
+            ),
+
+          )
+         ));
+
+
+        // Contact section
+        CSF::createSection($prefix, array(
+           'title'  => __('Contact Section', 'medicare'),
+          'icon'      => 'fa fa-rocket',
+          'fields' =>   array(
+            array(
+              'id'     => 'contact-info',
+              'type'   => 'repeater',
+              'title'  => __('Contact Information', 'medicare'),
+              'fields' => array(
+            
+                array(
+                  'id'    => 'contact-icon',
+                  'type'  => 'icon',
+                  'title' => __('Contact icon', 'medicare'),
+                ),
+
+                array(
+                  'id'    => 'contact-title',
+                  'type'  => 'text',
+                  'title' => __('Contact Title', 'medicare'),
+                ),
+
+                array(
+                  'id'    => 'contact-info-text',
+                  'type'  => 'text',
+                  'title' => __('Contact Info Text', 'medicare'),
+                ),
+            
+              ),
+            ),
+          ) 
+        ));
+
 }
 
 

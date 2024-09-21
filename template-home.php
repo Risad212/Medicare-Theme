@@ -23,10 +23,10 @@
 <?php get_template_part('template-parts/home/home', 'counter') ?>
 
 <!--============== DOCTORS SECTION ===============-->
-<?php get_template_part('template-parts/home/home', 'doctor') ?>
+<?php get_template_part('template-parts/section/section', 'doctor') ?>
 
 <!--============== TESTIMONIAL SECTION ===============-->
-<?php get_template_part('template-parts/home/home', 'testimonial') ?>
+<?php get_template_part('template-parts/section/section', 'testimonial') ?>
 
 <!--============== BLOG SECTION ===============-->
 <?php get_template_part('template-parts/home/home', 'blog') ?>

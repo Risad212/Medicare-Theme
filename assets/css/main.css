@@ -2022,10 +2022,9 @@ input:-webkit-autofill:focus {
   border-radius: 4px;
 }
 
-.emargency-services .emarency-wrap .box .icon svg {
-  fill: #fff;
-  width: 35px;
-  height: 35px;
+.emargency-services .emarency-wrap .box .icon i {
+  color: #fff;
+  font-size: 22px;
 }
 
 .emargency-services .emarency-wrap .box div span {
@@ -2080,9 +2079,9 @@ input:-webkit-autofill:focus {
   margin-right: 15px;
 }
 
-.prevention-section .single-prevention .icon svg {
-  width: 40px;
-  height: 40px;
+.prevention-section .single-prevention .icon i {
+  font-size: 22px;
+  color: #fff;
 }
 
 .prevention-section .single-prevention .content .title {
@@ -2175,9 +2174,9 @@ input:-webkit-autofill:focus {
   border-radius: 3px;
 }
 
-.contact-info .single-info .icon svg {
-  fill: var(--primary-color);
-  width: 40px;
+.contact-info .single-info .icon i {
+  color: var(--primary-color);
+  font-size: 30px;
 }
 
 .contact-info .single-info .content .title {

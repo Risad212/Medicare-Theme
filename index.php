@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 	<!--========== BreadCamb Section ==========-->
-	<?php get_template_part('template-parts/header/header', 'bredcamb') ?>
+	<?php get_template_part('template-parts/blog/blog', 'bredcamb') ?>
 
    <!--========== Blog Section ==========-->
    <?php get_template_part('template-parts/blog/blog', 'blog') ?>
