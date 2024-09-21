@@ -6,14 +6,11 @@
                 <?php the_content()?>
             </div>
             <div class="col-lg-4">
-            <div class="service-post">
-                <h4>Our Services</h4>
-                  <ul>
-                      <li><a href="#">ডাক্তার চেম্বার</a></li>
-                   </ul>
-               </div>
-              </div>
-           </div>
+             <div class="service-post-wrap">
+                <?php if ( is_active_sidebar( 'service-sidebar' ) ) : ?>
+                    <?php dynamic_sidebar( 'service-sidebar' ); ?>
+                <?php endif; ?>
+             </div>
         </div>
     </div>
 </section>

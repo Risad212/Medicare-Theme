@@ -131,8 +131,24 @@ function medicare_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	//  service sidebar widget
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Service Sidebar', 'medicare' ),
+			'id'            => 'service-sidebar',
+			'description'   => esc_html__( 'Add Service Widget Here', 'medicare' ),
+			'before_widget' => '<div class="service-post">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		)
+	);
 }
 add_action( 'widgets_init', 'medicare_widgets_init' );
+
+
+/*--------- Service Widget -----------*/
 
 /**
  * Enqueue scripts and styles.
