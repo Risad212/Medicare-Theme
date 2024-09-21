@@ -6,7 +6,7 @@
 ?>
 
 <!--========== BreadCamb Section ==========-->
-<?php get_template_part('template-parts/about/about', 'bredcamb')?>
+<?php get_template_part('template-parts/header/header', 'bredcamb')?>
 
 <!--========== About Hospital section ==========-->
 <?php get_template_part('template-parts/about/about', 'hospital')?>

@@ -6,7 +6,7 @@
 ?>
 
 <!--========== BreadCamb Section ==========-->
-<?php get_template_part('template-parts/doctor/doctor', 'bredcamb') ?>
+<?php get_template_part('template-parts/header/header', 'bredcamb') ?>
 
 <!--========== Doctors Section ==========-->
 <?php get_template_part('template-parts/doctor/doctor', 'doctor') ?>

@@ -315,7 +315,6 @@ if(class_exists('CSF')){
         )
        ));
 
-
      // Sister Concern Section
      CSF::createSection($prefix, array(
       'title'  => __('Sister Concern Section', 'medicare'),
@@ -351,7 +350,20 @@ if(class_exists('CSF')){
       )
      ));
 
-  
+      // breadcrumb section
+      CSF::createSection($prefix, array(
+        'title'  => __('breadcrumb Section', 'medicare'),
+        'icon'      => 'fa fa-rocket',
+        'fields' =>  array(
+          array(
+            'id'    => 'breadcrumb-bg',
+            'type'  => 'background',
+            'title' => __('breadcrumb Background', 'medicare'),
+             'background_color' => false
+          ),
+        )
+      ));
+
 }
 
 

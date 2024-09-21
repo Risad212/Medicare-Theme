@@ -6,7 +6,7 @@
 ?>
 
 <!--========== BreadCamb Section ==========-->
-<?php get_template_part('template-parts/appoinment/appoinment', 'bredcamb') ?>
+<?php get_template_part('template-parts/header/header', 'bredcamb') ?>
 
 <!--========== Appoinment Section ==========-->
 <?php get_template_part('template-parts/appoinment/appoinment', 'appoinment') ?>
