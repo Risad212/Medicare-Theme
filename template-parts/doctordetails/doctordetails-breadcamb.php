@@ -5,7 +5,7 @@
                     <div class="breadcrumb-text-wrapper">
                         <h2 class="page-name">Doctor Details</h2>
                         <ul class="breadcrumb-list">
-                            <li><a href="/">Home</a></li>
+                            <li><a href="home">Home</a></li>
                             <li><?php the_title()?></li>
                         </ul>
                     </div><!--/.breadcrumb-text-wrapper-->

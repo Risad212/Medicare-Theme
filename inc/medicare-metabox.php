@@ -37,6 +37,33 @@ if(class_exists('CSF')){
     CSF::createSection(  $doctor_prefix, array(
         'title'  => __('Doctor Single', 'medicare'),
         'fields' => array(
+
+            array(
+                'id'    => 'doctor-department',
+                'type'  => 'text',
+                'title' => __('Doctor Department', 'medicare'),
+             ),
+
+             array(
+                'id'    => 'doctor-speciality',
+                'type'  => 'text',
+                'title' => __('Doctor Speciality', 'medicare'),
+             ),
+
+             array(
+                'id'          => 'doctor-availability',
+                'type'        => 'select',
+                'title'       => ('Select Availability'),
+                'placeholder' => 'Select an option',
+                'options'     => array(
+                  'morning'  => 'morning',
+                  'afternoon'  => 'afternoon',
+                  'evening'  => 'evening',
+                ),
+                'default'     => 'morning'
+              ),
+
+
             array(
                 'id'     => 'doctor-social-list',
                 'type'   => 'repeater',
