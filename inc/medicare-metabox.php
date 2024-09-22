@@ -2,7 +2,7 @@
 
 if(class_exists('CSF')){
 
-    $prefix = 'medicare-metabox';
+    $prefix = 'medicare-service-metabox';
     $doctor_prefix = 'medicare-doctor-metabox';
 
 
