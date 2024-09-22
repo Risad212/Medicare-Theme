@@ -3,7 +3,6 @@
 if(class_exists('CSF')){
 
     $prefix = 'medicare-metabox';
-
     $doctor_prefix = 'medicare-doctor-metabox';
 
 
@@ -12,6 +11,7 @@ if(class_exists('CSF')){
         'title'  => __('Medicare Metabox', 'medicare'),
         'post_type' => array('services'), 
     ) );
+
 
     // Create a section for Services
     CSF::createSection(  $prefix, array(
@@ -24,20 +24,21 @@ if(class_exists('CSF')){
             ),
         )
     ) );
+
     
-    /*---------- Doctors ----------*/
-    
-    // Create a Doctor Metabox
+    /*----------- Doctor Metabox -----------*/
+
     CSF::createMetabox(  $doctor_prefix, array(
         'title'  => __('Medicare Metabox', 'medicare'),
         'post_type' => 'doctors', 
     ) );
 
+
     CSF::createSection(  $doctor_prefix, array(
-        'title'  => __('Doctors Single', 'medicare'),
+        'title'  => __('Doctor Single', 'medicare'),
         'fields' => array(
             array(
-                'id'     => 'doctor-list',
+                'id'     => 'doctor-social-list',
                 'type'   => 'repeater',
                 'title'  => __('Social List', 'medicare'),
                 'fields' => array(
