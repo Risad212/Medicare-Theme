@@ -148,7 +148,6 @@ function medicare_widgets_init() {
 add_action( 'widgets_init', 'medicare_widgets_init' );
 
 
-/*--------- Service Widget -----------*/
 
 /**
  * Enqueue scripts and styles.

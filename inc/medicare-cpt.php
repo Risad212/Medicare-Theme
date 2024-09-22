@@ -108,7 +108,7 @@ function medicare_doctor_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'Doctors', $args );
+	register_post_type( 'doctors', $args );
 
 }
 add_action( 'init', 'medicare_doctor_cpt', 0 );
