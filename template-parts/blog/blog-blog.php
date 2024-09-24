@@ -1,6 +1,4 @@
-
-
-<section class="blog-page">
+<section class="blog-section">
         <div class="container">
            <div class="row">
                <?php 

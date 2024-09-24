@@ -1,6 +1,9 @@
 <?php 
   $options = get_option( 'medicare-options' ); 
   $blog_details_list = $options['blog-details-social'];
+  $post_id = get_the_ID(); 
+  setup_postdata($post_id);
+  $author = get_the_author_meta('display_name', get_post_field('post_author', $post_id));
 ?>
 
 <section class="blog-details">
@@ -28,7 +31,7 @@
                                 </li>
                                 <li class="item">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zM423.966 358.195C387.006 320.667 338.009 300 286 300h-60c-52.008 0-101.006 20.667-137.966 58.195C51.255 395.539 31 444.833 31 497c0 8.284 6.716 15 15 15h420c8.284 0 15-6.716 15-15 0-52.167-20.255-101.461-57.034-138.805z" fill="#05d3b0" opacity="1" data-original="#000000" class=""></path></g></svg>
-                                    <?php the_author(); ?>
+                                    <?php echo $author ?>
                                 </li>
                             </ul>
                         </div>
@@ -52,52 +55,6 @@
                                    }
                                  ?>
                             </ul>
-                        </div>
-                        <hr class="mt-5">
-                        <div class="comment-section">
-                            <div class="comment-title">3 Comments</div>
-                            <div class="single-comment">
-                                <div class="comment-img">
-                                    <img src="media/blog/user.png" alt="">
-                                </div>
-                                <div class="comments">
-                                    <h5 class="comment-author">Ammee Burtton</h5>
-                                    <span class="comment-date">July 21, 2023</span>
-                                    <p>Id vim facilis ceteros percipit, altera phaedrum sea at, te alia novum praesent
-                                        sit. Ne
-                                        justo mazim delenit eam, pri ex brute interpretaris, invenire.</p>
-                                    <button class="reply-btn">Reply <i class="fa-solid fa-reply"></i></button>
-                                </div>
-                            </div>
-                            <!--- comment form --->
-                            <div class="comment-form-wrap">
-                                <h4 class="title">Leave A Reply</h4>
-                                <p class="mt-3">Your email address will not be published. Required fields are marked *
-                                </p>
-                                <form class="mt-3">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="mb-3">
-                                                <input type="text" id="name" placeholder="Your Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="mb-3">
-                                                <input type="email" id="email" placeholder="Your Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="mb-3">
-                                                <div class="form-floating">
-                                                    <textarea placeholder="Leave a comment here" id="comment"
-                                                        style="height: 150px"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="section-button">Submit</button>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
