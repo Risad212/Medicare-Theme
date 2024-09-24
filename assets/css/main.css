@@ -2284,10 +2284,9 @@ input:-webkit-autofill:focus {
   justify-content: center;
   cursor: pointer;
 }
-.blog-details .blog-left .social-list .social-item svg {
-  width: 22px;
-  height: 22px;
-  fill: #000;
+.blog-details .blog-left .social-list .social-item i {
+  font-size: 20px;
+  color: #000;
 }
 
 /*--- blog right site ----*/

@@ -63,15 +63,11 @@
                         <div class="recent-post">
                             <h4 class="title">Recent Posts</h4>
                             <?php 
-                             $query = new WP_Query(array(
-                                'post_type' => 'post',
-                                'posts_per_page' => 3,
-                              ));
-                              if($query->have_posts()){
-                                  while($query->have_posts()){
-                                    $query->the_post();
+                              if(have_posts()){
+                                  while(have_posts()){
+                                    the_post();
                                ?>
-                                 <div class="single-post">
+                              <div class="single-post">
                                 <div class="post-thumnail">
                                     <a href="<?php the_permalink(); ?>">
                                         <img src="<?php the_post_thumbnail_url(); ?>" alt="">
@@ -91,30 +87,29 @@
                              ?>
                         </div>
                         <div class="blog-category">
-                            <h4 class="category-title">Blog Categories</h4>
-                            <ul class="category-list">
-                                <?php 
-                                
-                                 ?>
-                                <li class="item"><a href="#">Antibiotic(4)</a></li>
-                                <li class="item"><a href="#">Diseases(4)</a></li>
-                                <li class="item"><a href="#">Health Care(1)</a></li>
-                                <li class="item"><a href="#">Heart Rate(3)</a></li>
-                                <li class="item"><a href="#">Hospital(4)</a></li>
-                                <li class="item"><a href="#">Infectious (4)</a></li>
-                            </ul>
-                        </div>
-                        <div class="populate-tag">
-                            <h4 class="tag-title">Popular Tags</h4>
-                            <ul class="tag-list">
-                                <li class="tag-item"><a href="#">Antibiotic</a></li>
-                                <li class="tag-item"><a href="#">Diseases</a></li>
-                                <li class="tag-item"><a href="#">Health Care</a></li>
-                                <li class="tag-item"><a href="#">Heart Rate</a></li>
-                                <li class="tag-item"><a href="#">Hospital</a></li>
-                                <li class="tag-item"><a href="#">Infectious</a></li>
-                            </ul>
-                        </div>
+                        <h4 class="category-title">Blog Categories</h4>
+                        <ul class="category-list">
+                            <?php 
+                            $categories = get_categories(); 
+                            foreach ($categories as $category): ?>
+                                <li class="item"><a href="<?php echo esc_url(get_category_link($category->term_id)); ?>"><?php echo esc_html($category->name); ?> (<?php echo esc_html($category->count); ?>)</a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <div class="populate-tag">
+                        <h4 class="tag-title">Popular Tags</h4>
+                        <ul class="tag-list">
+                            <?php 
+                            $tags = get_tags(); // Retrieve all tags
+                            if ($tags) : 
+                                foreach ($tags as $tag) : ?>
+                                    <li class="tag-item"><a href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo esc_html($tag->name); ?></a></li>
+                                <?php endforeach; 
+                            else : ?>
+                                <li class="tag-item">No tags found</li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </div>
