@@ -622,6 +622,74 @@ if(class_exists('CSF')){
          ) 
        ));
 
+        // Footer Section 
+        CSF::createSection($prefix, array(
+          'title'  => __('Footer Section', 'medicare'),
+         'icon'      => 'fa fa-rocket',
+         'fields' =>  array(
+          array(
+            'id'    => 'footer-logo',
+            'type'  => 'media',
+            'title' => __('Footer Logo', 'medicare'),
+          ),
+          array(
+            'id'    => 'footer-disc',
+            'type'  => 'textarea',
+            'title' => __('Footer Discription', 'medicare'),
+          ),
+          array(
+            'id'     => 'footer-social',
+            'type'   => 'repeater',
+            'title'  => __('Footer Social Links', 'medicare'),
+            'fields' => array(
+              array(
+                'id'    => 'footer-icon',
+                'type'  => 'icon',
+                'title' => __('Footer Social Icon', 'medicare'),
+              ),
+              array(
+                'id'    => 'footer-link',
+                'type'  => 'link',
+                'title' => __('Footer Social link', 'medicare'),
+              ),
+            ),
+          ),  
+          
+          array(
+            'id'     => 'footer-contact-info',
+            'type'   => 'repeater',
+            'title'  => __('Footer Contact Info', 'medicare'),
+            'fields' => array(
+          
+              array(
+                'id'    => 'footer-contact-icon',
+                'type'  => 'icon',
+                'title' => __('Footer Contact icon', 'medicare'),
+              ),
+
+              array(
+                'id'    => 'footer-contact-text',
+                'type'  => 'text',
+                'title' => __('Footer Contact Text', 'medicare'),
+              ),
+          
+            ),
+          ),
+          
+          array(
+            'id'    => 'copywrite-left',
+            'type'  => 'text',
+            'title' => __('Copywrite Left Text', 'medicare'),
+          ),
+
+          array(
+            'id'    => 'copywrite-right',
+            'type'  => 'text',
+            'title' => __('Copywrite Right Text', 'medicare'),
+          ),
+          
+         )
+    ));
 }
 
 

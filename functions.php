@@ -144,9 +144,36 @@ function medicare_widgets_init() {
 			'after_title'   => '</h4>',
 		)
 	);
+
 }
 add_action( 'widgets_init', 'medicare_widgets_init' );
 
+
+/**
+ * Custom Footer Widget
+ */
+function register_footer_widgets() {
+
+    register_sidebar(array(
+        'name' => 'Footer Column 2',
+        'id' => 'footer-2',
+        'before_widget' => '<div class="footer-widget-2">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name' => 'Footer Column 3',
+        'id' => 'footer-3',
+        'before_widget' => '<div class="footer-widget-3">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ));
+}
+
+register_footer_widgets();
 
 
 /**
