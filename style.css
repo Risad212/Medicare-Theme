@@ -26,3 +26,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .page-section {
   padding: 50px 0;
 }
+
+p {
+  margin-bottom: 0;
+}
