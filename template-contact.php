@@ -12,8 +12,5 @@
 <!--========== Contact Section ==========-->
 <?php get_template_part('template-parts/contact/contact', 'contact') ?>
 
-<!--========== Google Map Section ==========-->
-<?php get_template_part('template-parts/contact/contact', 'map') ?>
-
 
 <?php get_footer()?>

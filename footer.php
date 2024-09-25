@@ -19,7 +19,7 @@
                   <div class="social-list">
                      <?php 
                         foreach($footer_social as $social){
-                           $link = $social['footer-link'];
+                           $link = $social['footer-link']['url'];
                            $icon = $social['footer-icon'];
                      ?>
                        <span class="item">

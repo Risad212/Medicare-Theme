@@ -11,7 +11,7 @@
 ?>
 
 
-<div class="about-hospital">
+<div class="about-hospital page-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

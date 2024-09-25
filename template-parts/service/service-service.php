@@ -4,7 +4,7 @@
   $service_title = $options['service-title'];
 ?>
 
-<section class="service-section services-page">
+<section class="service-section page-section">
       <div class="container">
          <div class="row gy-4">
             <?php 

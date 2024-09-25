@@ -3,7 +3,7 @@
   $contact_info = $options['contact-info'];
 ?>
 
-<section class="contact-page">
+<section class="contact-page page-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">

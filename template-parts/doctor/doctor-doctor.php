@@ -1,4 +1,4 @@
-<section class="doctor-section doctor-page">
+<section class="doctor-section page-section">
       <div class="container">
       <div class="row">
             <?php
