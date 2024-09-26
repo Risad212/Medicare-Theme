@@ -1,70 +1,157 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Medicare Theme Documentation
 
-_s
-===
+## 1. Introduction
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+**Medicare** is a WordPress theme tailored for small medical hospitals, clinics, and healthcare institutions. It provides an array of features like doctor profiles, appointment booking, service pages, and a blog. The theme is responsive, easy to customize, and includes options for changing content using the Codestar framework, making it the perfect solution for medical websites.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+## 2. Theme Features
 
-* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
-Note: `.no-sidebar` styles are automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+- **Doctor Profiles**: Showcase doctor bios, specialties, and contact information managed through custom post types.
+- **Appointment Booking**: Patients can book appointments directly on your site.
+- **Blog**: A dedicated blog to share medical updates and articles.
+- **Custom Widgets**: Display doctor profiles, services, and appointment forms with custom widgets managed through the Codestar framework.
+- **Responsive Design**: Fully responsive for all devices.
+- **Content Options via Codestar Framework**: Easily change content, such as text, images, and layouts, with a user-friendly interface.
 
-Installation
----------------
+## 3. Installation
 
-### Requirements
+### Installation via WordPress Admin:
+1. Download the **Medicare** theme file (`medicare.zip`).
+2. Log in to your WordPress dashboard.
+3. Navigate to **Appearance > Themes**.
+4. Click **Add New**, then **Upload Theme**.
+5. Select the `medicare.zip` file, click **Install Now**.
+6. Once installed, click **Activate**.
 
-`_s` requires the following dependencies:
+## 4. Theme Customization
 
-- [Node.js](https://nodejs.org/)
-- [Composer](https://getcomposer.org/)
+### Customizing with Codestar Framework:
 
-### Quick Start
+The **Codestar Framework** is integrated into the theme to make content changes and layout adjustments simple and user-friendly. You can modify various theme options like header images, homepage sections, and more.
 
-Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
+**To Access Content Options:**
+1. Navigate to **Appearance > Theme Options** in your WordPress dashboard.
+2. You can customize:
+   - **Logo and Favicon**: Upload your hospital’s logo and favicon.
+   - **Header Settings**: Manage text, buttons, and call-to-actions in the header.
+   - **Service Section**: Add, remove, or modify the services displayed.
+   - **Doctors Section**: Change content for doctor profiles, including specialties and contact details, managed with custom post types.
+   - **Appointment Section**: Customize the appointment form layout and text.
+   - **Footer Settings**: Edit copyright text, social media links, and more.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+These changes can be made instantly without coding knowledge.
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+### Other Theme Customizations:
+1. Go to **Appearance > Customize**.
+2. From here, you can customize:
+   - **Site Identity**: Upload your logo, set the site title, and tagline.
+   - **Menus**: Manage your navigation menus.
+   - **Widgets**: Add custom widgets to the sidebar or footer.
+   - **Homepage Settings**: Choose between a static page or your latest blog posts for the homepage.
 
-### Setup
+### Homepage Setup:
+1. Create a page titled "Home."
+2. Go to **Appearance > Customize > Homepage Settings**.
+3. Set the “Home” page as your static front page.
 
-To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+## 5. Creating Pages
 
-```sh
-$ composer install
-$ npm install
-```
+### Important Pages
 
-### Available CLI commands
+#### Home Page
+- Introduce your hospital and its services, including call-to-action buttons for booking appointments or contacting the hospital.
 
-`_s` comes packed with CLI commands tailored for WordPress theme development :
+#### About Hospital Page
+- Share the hospital's history, values, and vision.
 
-- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run compile:css` : compiles SASS files to css.
-- `npm run compile:rtl` : generates an RTL stylesheet.
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
-- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+#### Services Page
+- List the services provided by your medical facility.
+- For each service, link to a more detailed page with additional information.
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+#### Doctor Profiles
+- Manage doctor profiles through custom post types by going to **Doctors > Add New**.
+- Include the doctor's name, specialty, photo, and contact information.
 
-Good luck!
+#### Appointment Page
+- Create an appointment booking form using **Contact Form 7** and link it to the homepage.
+
+#### Blog Page
+- Go to **Pages > Add New** and title it "Blog."
+- Use the "Blog" template to showcase your latest posts.
+- Write articles by going to **Posts > Add New** and organize them by categories and tags.
+
+#### Contact Page
+- Create a contact form, include hospital contact information (address, phone, email), and add a map using the "Contact" template.
+
+## 6. Managing Appointments
+
+### Setting Up Appointment Booking with Contact Form 7
+1. Install and activate the **Contact Form 7** plugin from the WordPress repository.
+2. Create a new form by going to **Contact > Add New** in the admin dashboard.
+3. Customize the form fields to include:
+   - Name
+   - Email
+   - Phone Number
+   - Preferred Appointment Date & Time
+   - Any additional fields relevant to your booking process.
+4. Copy the shortcode for the form you just created.
+5. Create an **Appointment Page** and paste the shortcode into the content area.
+6. Publish the page. Patients will be able to book appointments directly from this Appointment Page.
+
+## 7. Custom Widgets
+
+### Specialized Widgets for Medical Content:
+
+The custom widgets in the **Medicare** theme are designed to showcase medical content effectively, utilizing custom post types and options available in the Codestar framework.
+
+#### 1. **Doctor Profile Widget**
+Displays doctor profiles, showing names, specialties, and contact details.
+
+**How to Use:**
+1. Go to **Appearance > Widgets**.
+2. Drag and drop the **Doctor Profile Widget** into a sidebar or footer.
+3. Manage the display of doctors using custom post types. Select which doctors to display by choosing them from the widget settings within the Codestar framework.
+
+#### 2. **Appointment Form Widget**
+Adds an appointment booking form to your sidebar or footer.
+
+**How to Use:**
+1. Go to **Appearance > Widgets**.
+2. Drag the **Appointment Form Widget** into the desired area.
+3. Set up the form fields and save.
+
+#### 3. **Services Widget**
+Displays a list of services with links to their respective pages.
+
+**How to Use:**
+1. Go to **Appearance > Widgets**.
+2. Drag the **Services Widget** into a sidebar or footer.
+3. Select the services to display, or choose to show all services. Manage these options using custom post types and the Codestar framework.
+
+#### 4. **Recent Blog Posts Widget**
+Displays your latest blog posts.
+
+**How to Use:**
+1. Go to **Appearance > Widgets**.
+2. Drag and drop the **Recent Posts Widget** to the desired location.
+3. Customize the number of posts and title for the widget.
+
+### Widget Areas
+- **Sidebar**: Great for placing doctor profiles, appointment forms, or services.
+- **Footer**: Ideal for displaying contact info, recent posts, or services across all pages.
+
+## 8. Demo Content
+
+To import demo content:
+1. Go to **Appearance > Import Demo Data**.
+2. Click **Import Demo** to load pages, posts, and settings to match the demo site.
+
+This is useful for quickly setting up your site and understanding how to structure your content.
+
+## 9. Theme Updates
+
+To ensure compatibility with the latest WordPress versions and receive new features or security patches, keep your **Medicare** theme updated.
+
+### How to Update:
+1. When an update is available, you'll see a notification in your WordPress dashboard.
+2. Click **Update Now** to automatically install the latest version.
