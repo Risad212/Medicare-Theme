@@ -27,11 +27,11 @@
                                                 fill="#05d3b0" opacity="1" data-original="#000000" class=""></path>
                                         </g>
                                     </svg>
-                                    <?php echo get_the_date() ?>
+                                    <?php echo esc_html(get_the_date()) ?>
                                 </li>
                                 <li class="item">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zM423.966 358.195C387.006 320.667 338.009 300 286 300h-60c-52.008 0-101.006 20.667-137.966 58.195C51.255 395.539 31 444.833 31 497c0 8.284 6.716 15 15 15h420c8.284 0 15-6.716 15-15 0-52.167-20.255-101.461-57.034-138.805z" fill="#05d3b0" opacity="1" data-original="#000000" class=""></path></g></svg>
-                                    <?php echo $author ?>
+                                    <?php echo esc_html($author) ?>
                                 </li>
                             </ul>
                         </div>
@@ -47,9 +47,9 @@
                                       $link = $blog['blog-details-social-link']['url'];
                                   ?>
                                      <li class="social-item">
-                                      <a href="<?php echo $link ?>">
-                                        <i class="<?php echo $icon ?>"></i>
-                                      </a>
+                                     <a href="<?php echo esc_url($link); ?>">
+                                      <i class="<?php echo esc_attr($icon); ?>"></i>
+                                     </a>
                                     </li>
                                   <?php 
                                    }
@@ -62,10 +62,15 @@
                     <div class="blog-right">
                         <div class="recent-post">
                             <h4 class="title">Recent Posts</h4>
-                            <?php 
-                              if(have_posts()){
-                                  while(have_posts()){
-                                    the_post();
+                            <?php
+                               $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 3,
+                             );
+                            $query = new WP_Query($args);
+                              if($query->have_posts()){
+                                  while($query->have_posts()){
+                                    $query->the_post();
                                ?>
                               <div class="single-post">
                                 <div class="post-thumnail">
@@ -77,7 +82,7 @@
                                     <h4 class="post-title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h4>
-                                    <span class="post-date"><?php echo get_the_date(); ?></span>
+                                    <span class="post-date"><?php echo esc_html(get_the_date()); ?></span>
                                 </div>
                                </div>
                                <?php
@@ -103,7 +108,7 @@
                             $tags = get_tags(); // Retrieve all tags
                             if ($tags) : 
                                 foreach ($tags as $tag) : ?>
-                                    <li class="tag-item"><a href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo esc_html($tag->name); ?></a></li>
+                                    <li class="tag-item"><a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>"><?php echo esc_html($tag->name); ?></a></li>
                                 <?php endforeach; 
                             else : ?>
                                 <li class="tag-item">No tags found</li>

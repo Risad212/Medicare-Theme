@@ -1,40 +1,54 @@
 <section class="blog-section">
-        <div class="container">
+    <div class="container">
         <div class="title-head">
             <span class="subtitle">Our Blog</span>
             <h3 class="title">Recent Articles and News</h3>
-         </div>
-           <div class="row">
-               <?php 
-                 $query = new WP_Query(array(
-                  'post_type' => 'post',
-                  'posts_per_page' => 3,
-                ));
-                 if($query->have_posts()){
-                    while($query->have_posts()){
-                     $query->the_post();
-                  ?>
-                 <div class="col-lg-4">
-                    <div class="blog-card">
-                    <div class="blog-img">
-                       <a href="<?php the_permalink(); ?>">
-                          <img class="img-fluid"src="<?php the_post_thumbnail_url(); ?>" alt="">
-                       </a>
-                    </div>
-                    <div class="card-body">
-                       <div class="cart-top">
-                          <span class="author"><i class="fa-solid fa-user"></i> <?php echo get_the_author(); ?></span>
-                          <span class="date"><i class="fa-solid fa-calendar-days"></i> <?php echo get_the_date(); ?></span>
-                       </div>
-                       <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                       <p><?php the_excerpt(); ?></p>
-                    </div>
-                 </div>
-                 </div>
-                 <?php
-                    }
-                 }
-                ?>
-           </div>
         </div>
-     </section> 
+        <div class="row">
+            <?php 
+            $query = new WP_Query(array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+            ));
+            if ($query->have_posts()) {
+                while ($query->have_posts()) {
+                    $query->the_post(); 
+            ?>
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php 
+                                if (has_post_thumbnail()) {
+                                    the_post_thumbnail('full', ['class' => 'img-fluid', 'alt' => get_the_title()]);
+                                } else {
+                                    // Placeholder image if no thumbnail is set
+                                    echo '<img class="img-fluid" src="' . esc_url(get_template_directory_uri() . '/path/to/placeholder-image.jpg') . '" alt="' . esc_attr(get_the_title()) . '">';
+                                }
+                                ?>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-top">
+                                <span class="author">
+                                    <i class="fa-solid fa-user"></i> <?php echo esc_html(get_the_author()); ?>
+                                </span>
+                                <span class="date">
+                                    <i class="fa-solid fa-calendar-days"></i> <?php echo esc_html(get_the_date()); ?>
+                                </span>
+                            </div>
+                            <h3 class="title">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h3>
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php
+                }
+                wp_reset_postdata(); // Reset post data
+            }
+            ?>
+        </div>
+    </div>
+</section>
