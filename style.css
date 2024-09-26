@@ -1,6 +1,6 @@
 /*!
 Theme Name: medicare
-Theme URI: http://underscores.me/
+Theme URI: https://www.hmrisad.com/
 Author: HM Risad
 Author URI: https://www.hmrisad.com/
 Description: Medicare is a comprehensive and professional WordPress theme designed specifically for hospitals, medical centers, clinics, and healthcare providers. Built with a focus on delivering a seamless user experience and functionality, Medicare provides all the essential tools you need to create an impactful online presence for your medical services.
@@ -10,23 +10,25 @@ Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: medicare
-Tags: medical, hospital, healthcare, clinic, WordPress template, medical services, doctor profiles, appointment booking, responsive design, healthcare professional, medical center, medical clinic, healthcare provider, medical services layout, WordPress theme
+Tags: medical
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
-medicare is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*----- common style -------*/
+/*----- Common Styles -------*/
+
+/* General Section Styles */
 .page-section {
-  padding: 50px 0;
+  padding: 50px 0; /* Adds vertical spacing for page sections */
 }
 
+/* Typography Styles */
 p {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Removes bottom margin from paragraphs */
 }
+
+/* Additional common styles can go here */

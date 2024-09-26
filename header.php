@@ -29,6 +29,7 @@
        $header_address = $options['header-address'];
        $header_hours = $options['header-hours'];
        $header_social = $options['header-social'];
+       $site_logo = $options['site-logo']['url'];
      ?>
 
 
@@ -92,7 +93,7 @@
       <div class="container">
          <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-               <img src="<?php echo get_template_directory_uri()?>/assets/media/common/logo.png" alt="">
+               <img src="<?php echo $site_logo ?>" alt="">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbar-content">

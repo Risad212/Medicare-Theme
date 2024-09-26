@@ -49,6 +49,12 @@ if(class_exists('CSF')){
           
             ),
           ),
+
+          array(
+            'id'    => 'site-logo',
+            'type'  => 'media',
+            'title' => __('Site Logo ', 'medicare'),
+          ),
     
         )
     ));

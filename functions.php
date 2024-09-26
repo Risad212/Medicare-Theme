@@ -102,6 +102,8 @@ function medicare_setup() {
 }
 add_action( 'after_setup_theme', 'medicare_setup' );
 
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -281,12 +283,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Custom Options
  */
 require get_template_directory() . '/inc/medicare-options.php';
-
-
-/**
- * Custom Post Type
- */
-require get_template_directory() . '/inc/medicare-cpt.php';
 
 
 /**
