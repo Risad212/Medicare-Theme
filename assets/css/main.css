@@ -1509,7 +1509,7 @@ input:-webkit-autofill:focus {
   margin-bottom: 22px;
 }
 
-.footer-widget-4 .contact-list .item a {
+.footer-widget-4 .contact-list .item {
   display: flex;
   color: #cbcbcb;
   font-weight: 400;
@@ -1519,9 +1519,9 @@ input:-webkit-autofill:focus {
   margin: 0;
 }
 
-.footer-widget-4 .contact-list .item .icon svg {
-  width: 20px;
-  fill: #fff;
+.footer-widget-4 .contact-list .item .icon i {
+  font-size: 18px;
+  color: #fff;
 }
 
 .footer-widget-4 .contact-list .item .icon {

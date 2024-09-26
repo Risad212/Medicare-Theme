@@ -39,7 +39,10 @@
          <div class="topbar-wrap">
             <div class="topbar-left">
                <span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <?php 
+                     if($header_address){
+                   ?>
+                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
                      xml:space="preserve">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -49,10 +52,17 @@
                            d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z">
                         </path>
                      </g>
-                  </svg>
-                  <span><?php echo $header_address; ?></span>
+                   </svg>
+                   <span><?php echo esc_html($header_address); ?></span>
+                   <?php
+                     }
+                   ?>
                </span>
-               <span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <span>
+                  <?php 
+                    if($header_hours){
+                   ?>
+                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                      <g id="SVGRepo_iconCarrier">
@@ -64,24 +74,31 @@
                            fill="white"></path>
                      </g>
                   </svg>
-                  <span><?php echo $header_hours; ?></span>
+                   <span><?php echo esc_html($header_hours); ?></span>
+                   <?php
+                    }
+                   ?>
                </span>
             </div>
             <div class="topbar-right">
                <ul class="socail-list">
-               <?php 
-                  foreach($header_social as $social){
-                     $social_link = $social['header-social-url']['url'];
-                     $social_icon = $social['header-social-icon'];
+               <?php
+                  // Check if $header_social is defined and is an array
+                  if ( ! empty( $header_social ) && is_array( $header_social ) ) : 
+                     foreach ( $header_social as $social ) :
+                        // Ensure that the necessary keys exist before accessing them
+                        $social_link = isset( $social['header-social-url']['url'] ) ? esc_url( $social['header-social-url']['url'] ) : '';
+                        $social_icon = isset( $social['header-social-icon']) ? esc_attr( $social['header-social-icon']) : '';
+                        ?>
+                        <li class="item">
+                              <a href="<?php echo $social_link; ?>" target="_blank" rel="noopener noreferrer">
+                                 <i class="<?php echo $social_icon; ?>"></i>
+                              </a>
+                        </li>
+                        <?php
+                     endforeach; 
+                  endif; 
                   ?>
-                 <li class="item">
-                     <a href="<?php echo $social_link; ?>">
-                       <i class="<?php echo $social_icon; ?>"></i>
-                     </a>
-                  </li>
-                <?php
-                  }
-                ?>
                </ul>
             </div>
          </div>
@@ -93,7 +110,7 @@
       <div class="container">
          <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-               <img src="<?php echo $site_logo ?>" alt="">
+               <img src="<?php echo esc_url($site_logo) ?>" alt="">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbar-content">
