@@ -22,8 +22,8 @@
                             $social_link = $social['social-link']['url'];
                             $social_icon = $social['social-icon'];
                            ?>
-                             <li class="item"><a href="<?php echo $social_link; ?>">
-                               <i class="<?php echo $social_icon ?>"></i>
+                             <li class="item"><a href="<?php echo esc_url($social_link); ?>">
+                               <i class="<?php echo esc_attr($social_icon) ?>"></i>
                              </a></li>
                          <?php
                            }

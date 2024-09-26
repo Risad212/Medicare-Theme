@@ -17,9 +17,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="emargency-content">
-                        <h5 class="subtitle"><?php echo $emergency_subtitle ?></h5>
-                        <h2 class="title"><?php echo $emergency_title ?></h2>
-                        <p><?php echo $emergency_disc ?></p>
+                        <h5 class="subtitle"><?php echo esc_html($emergency_subtitle) ?></h5>
+                        <h2 class="title"><?php echo esc_html($emergency_title) ?></h2>
+                        <p><?php echo esc_html($emergency_disc) ?></p>
                         <div class="emarency-wrap">
                             <?php
                               foreach($emergency_info as $info){

@@ -16,11 +16,11 @@
               ?>
                <div class="single-info">
                <span class="icon">
-                 <i class="<?php echo $icon ?>"></i>
+                 <i class="<?php echo esc_attr($icon) ?>"></i>
                </span>
             <div class="content">
-              <h4 class="title"><?php echo $title ?></h4>
-              <span><?php echo $text ?></span>
+              <h4 class="title"><?php echo esc_html($title) ?></h4>
+              <span><?php echo esc_html($text) ?></span>
             </div>
            </div>
             <?php

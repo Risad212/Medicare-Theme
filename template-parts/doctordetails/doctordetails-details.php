@@ -20,14 +20,14 @@
         <div class="doctor-info">
           <h4 class="doctor-name"><?php the_title() ?></h4>
           <h5 class="doctor-specialist text-black mb-4">
-            <strong class="mr-2">Department</strong> - <?php echo $department ?>
+            <strong class="mr-2">Department</strong> - <?php echo esc_html($department) ?>
           </h5>
           <h5 class="doctor-specialist">
-            <strong class="my-3">Specialist</strong> - <?php echo $speciality ?>
+            <strong class="my-3">Specialist</strong> - <?php echo esc_html($speciality) ?>
           </h5>
           <?php the_content() ?>
           <h5 class="doctor-availability">
-            <strong class="mr-2">Availability</strong> - <?php echo $availability ?>
+            <strong class="mr-2">Availability</strong> - <?php echo esc_html($availability) ?>
           </h5>
         </div>
       </div>
