@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="emargency-image">
-                        <img class="img-fluid" src="<?php echo $emergency_img ?>" alt="">
+                        <img class="img-fluid" src="<?php echo esc_url($emergency_img) ?>" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -23,9 +23,9 @@
                         <div class="emarency-wrap">
                             <?php
                               foreach($emergency_info as $info){
-                                $info_icon = $info['emergency-info-icon'];
-                                $info_title = $info['emergency-info-title'];
-                                $info_text = $info['emergency-info-text'];
+                                $info_icon = esc_attr($info['emergency-info-icon']);
+                                $info_title = esc_html($info['emergency-info-title']);
+                                $info_text = esc_html($info['emergency-info-text']);
                              ?>
                                <div class="box">
                                 <span class="icon">

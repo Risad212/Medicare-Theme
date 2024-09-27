@@ -4,7 +4,7 @@
  ?>
 
 <div class="breadcrumb" style="background-image: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 66%)),
-    url(<?php echo $breadcrumb_bg; ?>);">
+    url(<?php echo esc_url($breadcrumb_bg); ?>);">
         <div class="container">
             <div class="col-xs-12">
                 <div class="breadcrumb-content">

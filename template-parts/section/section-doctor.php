@@ -16,23 +16,25 @@
                     $query->the_post();
                     $doctors = get_post_meta(get_the_ID(), 'medicare-doctor-metabox', true);
                     $social_list = isset($doctors['doctor-social-list']) ? $doctors['doctor-social-list'] : []; // Default to empty array
-            ?>
+                  ?>
                     <div class="col-lg-4">
                         <div class="doctor-card">
                             <div class="card-img">
                                 <img class="img-fluid" src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="<?php esc_attr(the_title()); ?>">
                                 <ul class="social-media">
                                     <?php 
-                                    foreach ($social_list as $social) {
+                                     if($social_list){
+                                      foreach ($social_list as $social) {
                                         $social_link = isset($social['social-link']['url']) ? esc_url($social['social-link']['url']) : '#'; // Default link
                                         $social_icon = isset($social['social-icon']) ? esc_attr($social['social-icon']) : ''; // Default to empty string
-                                    ?>
-                                        <li class="item">
+                                       ?>
+                                       <li class="item">
                                             <a href="<?php echo $social_link; ?>" target="_blank" rel="noopener noreferrer">
                                                 <i class="<?php echo $social_icon; ?>"></i>
                                             </a>
                                         </li>
                                     <?php
+                                    }
                                     }
                                     ?>
                                 </ul>

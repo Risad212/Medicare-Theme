@@ -15,10 +15,10 @@
               <div class="col-lg-4">
                <div class="feature-card">
                   <span class="icon">
-                     <i class="<?php echo $feature_icon ?>"></i>
+                     <i class="<?php echo esc_attr($feature_icon) ?>"></i>
                   </span>
-                  <h4 class="title"><?php echo $feature_title ?></h4>
-                  <p><?php echo $feature_disc ?></p>
+                  <h4 class="title"><?php echo esc_html($feature_title) ?></h4>
+                  <p><?php echo esc_html($feature_disc) ?></p>
                </div>
             </div>
             <?php

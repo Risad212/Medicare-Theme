@@ -856,20 +856,20 @@ input:-webkit-autofill:focus {
   margin: 100px 0;
 }
 
-.sotry-content p {
+.story-content p {
   line-height: 1.7;
   color: #364d59;
   font-weight: 300;
   font-size: 1rem;
 }
 
-.sotry-content .title {
+.story-content .title {
   margin-bottom: 15px;
   font-size: 25px;
   font-weight: 600;
 }
 
-.sotry-content a {
+.story-content .button {
   padding: 10px 25px;
   background: transparent;
   color: var(--primary-color);
@@ -1505,6 +1505,11 @@ input:-webkit-autofill:focus {
 }
 
 /*------ footer widget 4 --------*/
+.footer-section .footer-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .footer-widget-4 .contact-list .item {
   margin-bottom: 22px;
 }
@@ -1525,8 +1530,8 @@ input:-webkit-autofill:focus {
 }
 
 .footer-widget-4 .contact-list .item .icon {
-  margin-right: 12px;
-  margin-top: 6px;
+  margin-right: 8px;
+  margin-top: 3px;
 }
 
 /*---- copwywrite text ----*/

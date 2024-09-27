@@ -14,8 +14,8 @@
                             </div>
                             <div class="card-body">
                             <div class="cart-top">
-                                <span class="author"><i class="fa-solid fa-user"></i> <?php echo get_the_author(); ?></span>
-                                <span class="date"><i class="fa-solid fa-calendar-days"></i> <?php echo get_the_date(); ?></span>
+                                <span class="author"><i class="fa-solid fa-user"></i> <?php echo esc_html(get_the_author()); ?></span>
+                                <span class="date"><i class="fa-solid fa-calendar-days"></i> <?php echo esc_html(get_the_date()); ?></span>
                             </div>
                             <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <p><?php the_excerpt(); ?></p>

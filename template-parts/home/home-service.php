@@ -33,7 +33,7 @@ $service_title = isset($options['service-title']) ? esc_html($options['service-t
                             <a class="card-btn" href="<?php echo esc_url(get_permalink()); ?>">Read more</a>
                         </div>
                     </div>
-            <?php
+               <?php
                 }
                 wp_reset_postdata(); // Reset post data after custom query
             }

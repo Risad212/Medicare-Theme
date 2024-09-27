@@ -10,7 +10,6 @@ $counter_list = isset($options['counter-list']) ? $options['counter-list'] : [];
     ),
     url('<?php echo $counter_bg; ?>');" class="parallax100">
     <div class="container">
-        <!-- Counter Items -->
         <div class="row">
             <?php 
             foreach ($counter_list as $counter) {
@@ -22,10 +21,10 @@ $counter_list = isset($options['counter-list']) ? $options['counter-list'] : [];
                     <!-- Item -->
                     <div class="item text-center wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".5s">
                         <span class="icon">
-                            <i class="<?php echo $icon; ?>"></i>
+                            <i class="<?php echo esc_attr($icon); ?>"></i>
                         </span>
-                        <h3 class="count"><?php echo $number; ?></h3>
-                        <h6><?php echo $title; ?></h6>
+                        <h3 class="count"><?php echo esc_html($number); ?></h3>
+                        <h6><?php echo esc_html($title); ?></h6>
                     </div>
                 </div>
             <?php

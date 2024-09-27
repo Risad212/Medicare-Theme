@@ -15,35 +15,22 @@
                     $query->the_post(); 
             ?>
                 <div class="col-lg-4">
-                    <div class="blog-card">
-                        <div class="blog-img">
+                        <div class="blog-card">
+                            <div class="blog-img">
                             <a href="<?php the_permalink(); ?>">
-                                <?php 
-                                if (has_post_thumbnail()) {
-                                    the_post_thumbnail('full', ['class' => 'img-fluid', 'alt' => get_the_title()]);
-                                } else {
-                                    // Placeholder image if no thumbnail is set
-                                    echo '<img class="img-fluid" src="' . esc_url(get_template_directory_uri() . '/path/to/placeholder-image.jpg') . '" alt="' . esc_attr(get_the_title()) . '">';
-                                }
-                                ?>
+                                <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-top">
-                                <span class="author">
-                                    <i class="fa-solid fa-user"></i> <?php echo esc_html(get_the_author()); ?>
-                                </span>
-                                <span class="date">
-                                    <i class="fa-solid fa-calendar-days"></i> <?php echo esc_html(get_the_date()); ?>
-                                </span>
                             </div>
-                            <h3 class="title">
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </h3>
+                            <div class="card-body">
+                            <div class="cart-top">
+                                <span class="author"><i class="fa-solid fa-user"></i> <?php echo esc_html(get_the_author()); ?></span>
+                                <span class="date"><i class="fa-solid fa-calendar-days"></i> <?php echo esc_html(get_the_date()); ?></span>
+                            </div>
+                            <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <p><?php the_excerpt(); ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
             <?php
                 }
                 wp_reset_postdata(); // Reset post data

@@ -15,7 +15,7 @@ $about_large_image = isset( $options['about-large-image'] ) ? $options['about-la
                 <div class="story-content"> <!-- Corrected the typo from "sotry-content" to "story-content" -->
                     <h3 class="title"><?php echo esc_html( $about_title ); ?></h3>
                     <p class="mb-2"><?php echo esc_html( $about_disc ); ?></p>
-                    <a class="about-btn" href="<?php echo esc_url( $about_btn_link ); ?>"><?php echo esc_html( $about_btn_text ); ?></a>
+                    <a class="button" href="<?php echo esc_url( $about_btn_link ); ?>"><?php echo esc_html( $about_btn_text ); ?></a>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
