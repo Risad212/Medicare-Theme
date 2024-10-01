@@ -239,7 +239,7 @@ function medicare_scripts() {
 	 // main Js
 	 wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), _S_VERSION, true );
 
-   /*----------------------*/
+
 	wp_enqueue_style( 'medicare-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'medicare-style', 'rtl', 'replace' );
 
@@ -250,6 +250,8 @@ function medicare_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'medicare_scripts' );
+
+
 
 /**
  * Implement the Custom Header feature.
@@ -289,3 +291,14 @@ require get_template_directory() . '/inc/medicare-options.php';
  * Metabox
  */
 require get_template_directory() . '/inc/medicare-metabox.php';
+
+
+/**
+ * TGM Activation 
+ */
+require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+
+/**
+ * Medicare Plugin Activation
+ */
+require get_template_directory() . '/inc/medicare-plugin.activation.php';
