@@ -28,6 +28,12 @@ function medicare_plugin_activation(){
 			'slug'   => 'one-click-demo-import',
 			'required' => true,
 		),
+
+		array(
+			'name'   => __('Widget Importer & Exporter', 'medicare'),
+			'slug'   => 'widget-importer-exporter',
+			'required' => true,
+		),
 	);
 
 	
