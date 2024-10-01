@@ -298,7 +298,14 @@ require get_template_directory() . '/inc/medicare-metabox.php';
  */
 require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 
+
 /**
  * Medicare Plugin Activation
  */
 require get_template_directory() . '/inc/medicare-plugin.activation.php';
+
+
+/**
+ * Medicare Demo Import
+ */
+require get_template_directory() . '/inc/medicare-demo-import.php';

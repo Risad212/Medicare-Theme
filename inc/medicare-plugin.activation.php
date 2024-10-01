@@ -22,8 +22,15 @@ function medicare_plugin_activation(){
 			'source' => get_stylesheet_directory() . '/lib/plugins/medicare-custom-post.zip',
 			'required' => true,
 		),
+
+		array(
+			'name'   => __('One Click Demo Import', 'medicare'),
+			'slug'   => 'one-click-demo-import',
+			'required' => true,
+		),
 	);
 
+	
 	$config = array(
 		'id'           => 'medicare-plugin-active',                                  
 		'menu'         => 'Medicare Plugin Activation',   
