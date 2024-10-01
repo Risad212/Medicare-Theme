@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.6.2" created="2024-10-01 15:28" -->
+	<!-- generator="WordPress/6.6.2" created="2024-10-01 16:06" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Medicare Hospital</title>
 	<link>http://localhost/medicare-hospital</link>
 	<description></description>
-	<pubDate>Tue, 01 Oct 2024 15:28:41 +0000</pubDate>
+	<pubDate>Tue, 01 Oct 2024 16:06:28 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost/medicare-hospital</wp:base_site_url>
@@ -3258,6 +3258,133 @@ expenses for service.Provide direct support to an individual, family or communit
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[Contact form 1]]></title>
+		<link>http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=78</link>
+		<pubDate>Sat, 21 Sep 2024 09:02:29 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=78</guid>
+		<description></description>
+		<content:encoded><![CDATA[<label> Your name
+    [text* your-name autocomplete:name] </label>
+
+<label> Your email
+    [email* your-email autocomplete:email] </label>
+
+<label> Subject
+    [text* your-subject] </label>
+
+<label> Your message (optional)
+    [textarea your-message] </label>
+
+[submit "Submit"]
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).
+[_site_admin_email]
+Reply-To: [your-email]
+
+0
+0
+
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
+[your-email]
+Reply-To: [_site_admin_email]
+
+0
+0
+Thank you for your message. It has been sent.
+There was an error trying to send your message. Please try again later.
+One or more fields have an error. Please check and try again.
+There was an error trying to send your message. Please try again later.
+You must accept the terms and conditions before sending your message.
+Please fill out this field.
+This field has a too long input.
+This field has a too short input.
+There was an unknown error uploading the file.
+You are not allowed to upload files of this type.
+The uploaded file is too large.
+There was an error uploading the file.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>78</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-21 09:02:29]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-21 09:02:29]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-09-21 09:02:29]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-09-21 09:02:29]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[contact-form-1]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<label> Your name
+    [text* your-name autocomplete:name] </label>
+
+<label> Your email
+    [email* your-email autocomplete:email] </label>
+
+<label> Subject
+    [text* your-subject] </label>
+
+<label> Your message (optional)
+    [textarea your-message] </label>
+
+[submit "Submit"]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:8:{s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:4:"body";s:191:"From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:9:"recipient";s:19:"[_site_admin_email]";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:4:"body";s:220:"Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:9:"recipient";s:12:"[your-email]";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:12:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:27:"Please fill out this field.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[fa521a303f84cee7da7e07d652e64ad1ea8f19e7]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
 		<title><![CDATA[What is The Success rate of a root canel?]]></title>
 		<link>http://localhost/medicare-hospital/what-is-the-success-rate-of-a-root-canel/</link>
 		<pubDate>Sat, 21 Sep 2024 14:41:43 +0000</pubDate>
@@ -3537,28 +3664,47 @@ expenses for service.Provide direct support to an individual, family or communit
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[Contact form 1]]></title>
-		<link>http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=120</link>
-		<pubDate>Tue, 01 Oct 2024 15:04:58 +0000</pubDate>
+		<title><![CDATA[Contact Form]]></title>
+		<link>http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=79</link>
+		<pubDate>Sat, 21 Sep 2024 09:08:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=120</guid>
+		<guid isPermaLink="false">http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=79</guid>
 		<description></description>
-		<content:encoded><![CDATA[<label> Your name
-    [text* your-name autocomplete:name] </label>
-
-<label> Your email
-    [email* your-email autocomplete:email] </label>
-
-<label> Subject
-    [text* your-subject] </label>
-
-<label> Your message (optional)
-    [textarea your-message] </label>
-
-[submit "Submit"]
+		<content:encoded><![CDATA[<div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [text* name id:con_name placeholder "your name"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [email* email id:con_email placeholder "your email"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [number* phone id:con_phone placeholder  "Your Phone"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [text subject id:con_subject placeholder "your subject"]
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    [textarea* message id:con_message placeholder "Your Message"]
+                  </div>
+                </div>
+              </div>
+            </div>
+            [submit class:form-button "Send Message"]
+1
 [_site_title] "[your-subject]"
 [_site_title] <info@medicare.com>
-From: [your-name] [your-email]
+[_site_admin_email]
+From: [your-name] [your-email] [your-email]
 Subject: [your-subject]
 
 Message Body:
@@ -3566,24 +3712,23 @@ Message Body:
 
 -- 
 This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).
-[_site_admin_email]
-Reply-To: [your-email]
+Reply-To: [email]
 
-0
-0
+
+
 
 [_site_title] "[your-subject]"
 [_site_title] <info@medicare.com>
+[your-email]
 Message Body:
 [your-message]
 
 -- 
 This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
-[your-email]
 Reply-To: [_site_admin_email]
 
-0
-0
+
+
 Thank you for your message. It has been sent.
 There was an error trying to send your message. Please try again later.
 One or more fields have an error. Please check and try again.
@@ -3595,16 +3740,26 @@ This field has a too short input.
 There was an unknown error uploading the file.
 You are not allowed to upload files of this type.
 The uploaded file is too large.
-There was an error uploading the file.]]></content:encoded>
+There was an error uploading the file.
+Please enter a date in YYYY-MM-DD format.
+This field has a too early date.
+This field has a too late date.
+Please enter a number.
+This field has a too small number.
+This field has a too large number.
+The answer to the quiz is incorrect.
+Please enter an email address.
+Please enter a URL.
+Please enter a telephone number.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>120</wp:post_id>
-		<wp:post_date><![CDATA[2024-10-01 15:04:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-10-01 15:04:58]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-10-01 15:04:58]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-10-01 15:04:58]]></wp:post_modified_gmt>
+		<wp:post_id>79</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-21 09:08:18]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-21 09:08:18]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-09-27 12:57:44]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-09-27 12:57:44]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[contact-form-1]]></wp:post_name>
+		<wp:post_name><![CDATA[contact-form]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
@@ -3613,42 +3768,59 @@ There was an error uploading the file.]]></content:encoded>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<label> Your name
-    [text* your-name autocomplete:name] </label>
-
-<label> Your email
-    [email* your-email autocomplete:email] </label>
-
-<label> Subject
-    [text* your-subject] </label>
-
-<label> Your message (optional)
-    [textarea your-message] </label>
-
-[submit "Submit"]]]></wp:meta_value>
+		<wp:meta_value><![CDATA[<div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [text* name id:con_name placeholder "your name"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [email* email id:con_email placeholder "your email"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [number* phone id:con_phone placeholder  "Your Phone"]
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  [text subject id:con_subject placeholder "your subject"]
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    [textarea* message id:con_message placeholder "Your Message"]
+                  </div>
+                </div>
+              </div>
+            </div>
+            [submit class:form-button "Send Message"]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:8:{s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:4:"body";s:191:"From: [your-name] [your-email]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:204:"From: [your-name] [your-email] [your-email]
 Subject: [your-subject]
 
 Message Body:
 [your-message]
 
 -- 
-This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:9:"recipient";s:19:"[_site_admin_email]";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:17:"Reply-To: [email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:4:"body";s:220:"Message Body:
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
 [your-message]
 
 -- 
-This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:9:"recipient";s:12:"[your-email]";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:12:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:27:"Please fill out this field.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:27:"Please fill out this field.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
@@ -3660,7 +3832,387 @@ This email is a receipt for your contact form submission on our website ([_site_
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
-		<wp:meta_value><![CDATA[96bef0625889b57377c27338ae2326473ea91754]]></wp:meta_value>
+		<wp:meta_value><![CDATA[04590d6956cc4df1d631ec8b0dfa0cb2c242f42b]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_config_validation]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{s:9:"form.body";a:1:{i:0;a:2:{s:4:"code";s:17:"unavailable_names";s:4:"args";a:3:{s:7:"message";s:55:"Unavailable names (%names%) are used for form controls.";s:6:"params";a:1:{s:5:"names";s:6:""name"";}s:4:"link";s:63:"https://contactform7.com/configuration-errors/unavailable-names";}}}}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Appointment Form]]></title>
+		<link>http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=80</link>
+		<pubDate>Sat, 21 Sep 2024 09:54:49 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=80</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="form-wrap">
+    <div class="mb-4">
+        [text* name id:appoinment_name placeholder "Your Name"]
+    </div>
+    <div class="mb-4">
+        [email* email id:appoinment_email placeholder "Your Email"]
+    </div>
+    <div class="mb-4">
+        [number number min:11 max:11 id:appoinment_number placeholder "Your Phone Number"]
+    </div>
+    <div class="mb-4">
+        [select* doctor id:doctors "Select Doctor" "Doctor 2" "Doctor 1" "Doctor 3"]
+    </div>
+    <div class="mb-4">
+        [date date id:dateTo "Select Date"]
+    </div>
+    <div class="mb-4">
+        [select* time id:time "Select Appointment Time" "11:00 AM" "12:00 PM" "1:00 PM" "3:00 PM"]
+    </div>
+    <div class="text-center">
+        [submit class:appoinment-btn "Submit"]
+    </div>
+</div>
+1
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+[_site_admin_email]
+From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).
+Reply-To: [your-email]
+
+
+
+
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+[your-email]
+Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
+Reply-To: [_site_admin_email]
+
+
+
+Thank you for your message. It has been sent.
+There was an error trying to send your message. Please try again later.
+One or more fields have an error. Please check and try again.
+There was an error trying to send your message. Please try again later.
+You must accept the terms and conditions before sending your message.
+Please fill out this field.
+This field has a too long input.
+This field has a too short input.
+There was an unknown error uploading the file.
+You are not allowed to upload files of this type.
+The uploaded file is too large.
+There was an error uploading the file.
+Please enter a date in YYYY-MM-DD format.
+This field has a too early date.
+This field has a too late date.
+Please enter a number.
+This field has a too small number.
+This field has a too large number.
+The answer to the quiz is incorrect.
+Please enter an email address.
+Please enter a URL.
+Please enter a telephone number.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>80</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-21 09:54:49]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-21 09:54:49]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-09-25 16:15:34]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-09-25 16:15:34]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[appointment-form]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="form-wrap">
+    <div class="mb-4">
+        [text* name id:appoinment_name placeholder "Your Name"]
+    </div>
+    <div class="mb-4">
+        [email* email id:appoinment_email placeholder "Your Email"]
+    </div>
+    <div class="mb-4">
+        [number number min:11 max:11 id:appoinment_number placeholder "Your Phone Number"]
+    </div>
+    <div class="mb-4">
+        [select* doctor id:doctors "Select Doctor" "Doctor 2" "Doctor 1" "Doctor 3"]
+    </div>
+    <div class="mb-4">
+        [date date id:dateTo "Select Date"]
+    </div>
+    <div class="mb-4">
+        [select* time id:time "Select Appointment Time" "11:00 AM" "12:00 PM" "1:00 PM" "3:00 PM"]
+    </div>
+    <div class="text-center">
+        [submit class:appoinment-btn "Submit"]
+    </div>
+</div>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:191:"From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:27:"Please fill out this field.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[f1ad1847ccdee976678d2b057090dc61d66aecb0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_config_validation]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:2:{s:9:"form.body";a:1:{i:0;a:2:{s:4:"code";s:17:"unavailable_names";s:4:"args";a:3:{s:7:"message";s:55:"Unavailable names (%names%) are used for form controls.";s:6:"params";a:1:{s:5:"names";s:6:""name"";}s:4:"link";s:63:"https://contactform7.com/configuration-errors/unavailable-names";}}}s:23:"mail.additional_headers";a:1:{i:0;a:2:{s:4:"code";s:22:"invalid_mailbox_syntax";s:4:"args";a:3:{s:7:"message";s:51:"Invalid mailbox syntax is used in the %name% field.";s:6:"params";a:1:{s:4:"name";s:8:"Reply-To";}s:4:"link";s:68:"https://contactform7.com/configuration-errors/invalid-mailbox-syntax";}}}}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Doctor Appointment]]></title>
+		<link>http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=89</link>
+		<pubDate>Sun, 22 Sep 2024 15:01:46 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/medicare-hospital/?post_type=wpcf7_contact_form&#038;p=89</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="row">
+  <div class="col-lg-6">
+    <label>Doctor Name</label>
+    <div class="form-group">
+     [text* doctor-name class:form-control placeholder "Enter Doctor Name" ]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Type of Visit</label>
+    <div class="form-group">
+      [select visit_type class:form-control "First Visit" "Second Visit" "Show Report"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Patient's Name</label>
+    <div class="form-group">
+      [text* patient-name class:form-control placeholder "Enter Patient's Name"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Email</label>
+    <div class="form-group">
+      [email* email class:form-control placeholder "Your Email"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Phone</label>
+    <div class="form-group">
+      [tel* phone class:form-control placeholder "Your Phone Number"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Appointment Date</label>
+    <div class="form-group">
+      [date* appointment-date class:form-control]
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-group">
+      [submit class:default-btn "Send Request"]
+    </div>
+  </div>
+</div>
+1
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+[_site_admin_email]
+From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).
+Reply-To: [your-email]
+
+
+
+
+[_site_title] "[your-subject]"
+[_site_title] <info@medicare.com>
+[your-email]
+Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.
+Reply-To: [_site_admin_email]
+
+
+
+Thank you for your message. It has been sent.
+There was an error trying to send your message. Please try again later.
+One or more fields have an error. Please check and try again.
+There was an error trying to send your message. Please try again later.
+You must accept the terms and conditions before sending your message.
+Please fill out this field.
+This field has a too long input.
+This field has a too short input.
+There was an unknown error uploading the file.
+You are not allowed to upload files of this type.
+The uploaded file is too large.
+There was an error uploading the file.
+Please enter a date in YYYY-MM-DD format.
+This field has a too early date.
+This field has a too late date.
+Please enter a number.
+This field has a too small number.
+This field has a too large number.
+The answer to the quiz is incorrect.
+Please enter an email address.
+Please enter a URL.
+Please enter a telephone number.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>89</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-22 15:01:46]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-22 15:01:46]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-09-22 15:10:49]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-09-22 15:10:49]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[doctor-appointment]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="row">
+  <div class="col-lg-6">
+    <label>Doctor Name</label>
+    <div class="form-group">
+     [text* doctor-name class:form-control placeholder "Enter Doctor Name" ]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Type of Visit</label>
+    <div class="form-group">
+      [select visit_type class:form-control "First Visit" "Second Visit" "Show Report"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Patient's Name</label>
+    <div class="form-group">
+      [text* patient-name class:form-control placeholder "Enter Patient's Name"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Email</label>
+    <div class="form-group">
+      [email* email class:form-control placeholder "Your Email"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Phone</label>
+    <div class="form-group">
+      [tel* phone class:form-control placeholder "Your Phone Number"]
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <label>Appointment Date</label>
+    <div class="form-group">
+      [date* appointment-date class:form-control]
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-group">
+      [submit class:default-btn "Send Request"]
+    </div>
+  </div>
+</div>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:191:"From: [your-name] [your-email]
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+This is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:30:"[_site_title] "[your-subject]"";s:6:"sender";s:33:"[_site_title] <info@medicare.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:220:"Message Body:
+[your-message]
+
+-- 
+This email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:27:"Please fill out this field.";s:16:"invalid_too_long";s:32:"This field has a too long input.";s:17:"invalid_too_short";s:33:"This field has a too short input.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:31:"The uploaded file is too large.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:12:"invalid_date";s:41:"Please enter a date in YYYY-MM-DD format.";s:14:"date_too_early";s:32:"This field has a too early date.";s:13:"date_too_late";s:31:"This field has a too late date.";s:14:"invalid_number";s:22:"Please enter a number.";s:16:"number_too_small";s:34:"This field has a too small number.";s:16:"number_too_large";s:34:"This field has a too large number.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:13:"invalid_email";s:30:"Please enter an email address.";s:11:"invalid_url";s:19:"Please enter a URL.";s:11:"invalid_tel";s:32:"Please enter a telephone number.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[en_US]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3b11725b1bbd18bf44fb07691f772cb6d91f0143]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_config_validation]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{s:23:"mail.additional_headers";a:1:{i:0;a:2:{s:4:"code";s:22:"invalid_mailbox_syntax";s:4:"args";a:3:{s:7:"message";s:51:"Invalid mailbox syntax is used in the %name% field.";s:6:"params";a:1:{s:4:"name";s:8:"Reply-To";}s:4:"link";s:68:"https://contactform7.com/configuration-errors/invalid-mailbox-syntax";}}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				</channel>
