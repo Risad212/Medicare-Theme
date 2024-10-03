@@ -1,6 +1,6 @@
 <section class="doctor-section page-section">
       <div class="container">
-      <div class="row">
+      <div class="row gy-4">
             <?php
                $query = new WP_Query(array(
                   'post_type' => 'doctors',
