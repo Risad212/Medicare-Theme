@@ -4,7 +4,7 @@
             <span class="subtitle">OUR DOCTORS</span>
             <h3 class="title">Experienced Medical Specialist</h3>
         </div>
-        <div class="row">
+        <div class="row g-3">
             <?php
             $query = new WP_Query(array(
                 'post_type' => 'doctors',
@@ -17,7 +17,7 @@
                     $doctors = get_post_meta(get_the_ID(), 'medicare-doctor-metabox', true);
                     $social_list = isset($doctors['doctor-social-list']) ? $doctors['doctor-social-list'] : []; // Default to empty array
                   ?>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="doctor-card">
                             <div class="card-img">
                                 <img class="img-fluid" src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="<?php esc_attr(the_title()); ?>">

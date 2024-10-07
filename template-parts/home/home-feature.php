@@ -5,14 +5,14 @@
 
 <section class="feature-section">
       <div class="container">
-         <div class="row">
+         <div class="row g-3">
             <?php
               foreach($feature_list as $feature){
                $feature_icon = $feature['feature-icon'];
                $feature_title = $feature['feature-title'];
                $feature_disc = $feature['feature-disc'];
             ?>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                <div class="feature-card">
                   <span class="icon">
                      <i class="<?php echo esc_attr($feature_icon) ?>"></i>

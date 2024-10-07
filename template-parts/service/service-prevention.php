@@ -18,7 +18,7 @@
                     $title = esc_html($item['prevention-title']);
                     $discription = esc_html($item['prevention-disc']);
                   ?>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-md-6">
                     <div class="single-prevention">
                         <span class="icon">
                             <i class="<?php echo $icon ?>"></i>

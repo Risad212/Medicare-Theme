@@ -19,7 +19,7 @@
                     $services = get_post_meta(get_the_ID(), 'medicare-service-metabox', true);
                     $service_icon = isset($services['service-icon']) ? esc_attr($services['service-icon']) : ''; // Ensure safe output
             ?>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="service-card">
                             <span class="icon">
                                 <i class="<?php echo $service_icon; ?>"></i>

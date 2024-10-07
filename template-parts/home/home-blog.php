@@ -4,7 +4,7 @@
             <span class="subtitle">Our Blog</span>
             <h3 class="title">Recent Articles and News</h3>
         </div>
-        <div class="row">
+        <div class="row g-3">
             <?php 
             $query = new WP_Query(array(
                 'post_type' => 'post',

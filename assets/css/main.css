@@ -4,6 +4,11 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;300;400;500;700&display=swap"); */
 
+/* :root {
+  --Poppins: "font-family: 'Poppins', sans-serif;";
+  --Montserrat: "font-family: 'Montserrat', sans-serif;";
+} */
+
 @font-face {
   font-family: Montserrat;
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
@@ -39,11 +44,6 @@
   src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
 }
-
-/* :root {
-  --Poppins: "font-family: 'Poppins', sans-serif;";
-  --Montserrat: "font-family: 'Montserrat', sans-serif;";
-} */
 
 html,
 body {
@@ -154,8 +154,18 @@ a:hover {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 768px) {
+  .title-head {
+    margin-bottom: 30px;
+  }
+}
+
 .active-nav {
   color: var(--primary-color) !important;
+}
+
+.owl-theme .owl-nav {
+  display: none !important;
 }
 
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
@@ -544,6 +554,38 @@ input:-webkit-autofill:focus {
   box-shadow: 0 3px 7px 1px rgba(144, 161, 180, 0.2);
 }
 
+/*---------- Tablet Responsive -----------*/
+@media only screen and (max-width: 768px) {
+  .header .navbar-nav {
+    align-items: start;
+    gap: 15px;
+    padding-left: 15px;
+  }
+  .header {
+    padding: 15px 0px;
+  }
+  .header .navbar-nav li a {
+    padding: 0px;
+  }
+
+  .topbar .topbar-wrap .topbar-right .socail-list .item {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  .topbar .topbar-wrap .topbar-left span {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .topbar .topbar-wrap .topbar-left span:last-child svg {
+    width: 20px;
+    margin-right: 5px;
+  }
+  .topbar .topbar-wrap .topbar-left span svg {
+    width: 20px;
+  }
+}
+
 /*---------- Mobile Responsive -----------*/
 @media only screen and (max-width: 600px) {
   .header .navbar-nav li a {
@@ -553,6 +595,7 @@ input:-webkit-autofill:focus {
   .header .navbar-nav {
     align-items: unset;
     padding: 15px 0;
+    gap: 5px;
   }
 
   .nav-button a {
@@ -570,6 +613,9 @@ input:-webkit-autofill:focus {
 
   .header .navbar-nav li a::after {
     content: unset;
+  }
+  .header .navbar-nav li a {
+    display: inline-block;
   }
 }
 
@@ -850,10 +896,6 @@ input:-webkit-autofill:focus {
   .feature-section {
     margin-top: 50px;
   }
-
-  .feature-section .feature-card {
-    margin-bottom: 30px;
-  }
 }
 
 /*================================================
@@ -937,7 +979,7 @@ input:-webkit-autofill:focus {
 }
 
 /*---------- Mobile Responsive -----------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .about-section {
     margin: 50px 0;
   }
@@ -1164,6 +1206,7 @@ input:-webkit-autofill:focus {
 
 .doctor-card .card-img img {
   transition: 0.4s;
+  width: 100%;
 }
 
 .doctor-card .card-img:hover img {
@@ -1247,13 +1290,9 @@ input:-webkit-autofill:focus {
   color: var(--primary-color);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .doctor-section {
     padding: 50px 0;
-  }
-
-  .doctor-card {
-    margin-bottom: 30px;
   }
 }
 
@@ -1544,11 +1583,6 @@ input:-webkit-autofill:focus {
   }
 
   .footer-widget-4 .contact-list .item a {
-    align-items: center;
-  }
-
-  .footer-section .copay-write {
-    flex-direction: column;
     align-items: center;
   }
 }
@@ -1989,9 +2023,12 @@ input:-webkit-autofill:focus {
 }
 
 /*---------- Mobile Responsive -----------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .prevention-section {
     padding: 50px 0;
+  }
+  .prevention-section .single-prevention {
+    margin-bottom: 20px;
   }
 }
 
@@ -2078,6 +2115,8 @@ input:-webkit-autofill:focus {
 
 .blog-section .blog-card {
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.07);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .blog-section .blog-card .blog-img {
@@ -2511,4 +2550,23 @@ input:-webkit-autofill:focus {
 
 .doctor-details .default-btn {
   margin-top: 15px;
+}
+
+/*================================================
+    Common Responsive Class For Tablet
+==================================================*/
+
+@media screen and (max-width: 768px) {
+  .about-hospital .about-content {
+    padding-left: 0;
+  }
+  .contact-info {
+    margin-top: 0px;
+  }
+  .contact-info {
+    grid-gap: 16px;
+  }
+  .our-vission {
+    padding-top: 0px;
+  }
 }

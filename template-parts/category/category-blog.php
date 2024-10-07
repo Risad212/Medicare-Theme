@@ -5,7 +5,7 @@
                 if (have_posts()) : 
                 while (have_posts()) : the_post(); 
                 ?>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="blog-card">
                             <div class="blog-img">
                             <a href="<?php the_permalink(); ?>">

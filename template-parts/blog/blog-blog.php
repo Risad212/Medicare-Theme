@@ -1,6 +1,6 @@
 <section class="blog-section page-section">
     <div class="container">
-        <div class="row">
+        <div class="row g-3">
             <?php 
             $query = new WP_Query(array(
                 'post_type'      => 'post',

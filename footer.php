@@ -10,7 +10,7 @@
 <footer class="footer-section">
       <div class="container">
          <div class="row gy-4 footer-content">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                <div class="footer-widget-1">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                      <img class="img-fluid" src="<?php echo esc_url($footer_logo) ?>" alt="">
@@ -37,19 +37,19 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <h4 class="widget-title">Latest Post</h4>
                 <?php if (is_active_sidebar('footer-2')) : ?>
                     <?php dynamic_sidebar('footer-2'); ?>
                 <?php endif; ?>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                <h4 class="widget-title">Usefull Links</h4>
                 <?php if (is_active_sidebar('footer-3')) : ?>
                     <?php dynamic_sidebar('footer-3'); ?>
                 <?php endif; ?>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                <div class="footer-widget-4">
                   <h3 class="widget-title">Contact</h3>
                   <ul class="contact-list">

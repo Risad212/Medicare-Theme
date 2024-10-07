@@ -11,7 +11,7 @@ $about_mission = $options['about-mission'];
                     $title = esc_html($card['about-mission-title']);
                     $disc = esc_html($card['about-mission-disc']);
                  ?>
-                   <div class="col-lg-4">
+                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-vission-box">
                         <div class="icon">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

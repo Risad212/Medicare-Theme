@@ -11,14 +11,14 @@ $about_large_image = isset( $options['about-large-image'] ) ? $options['about-la
 <section class="about-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="story-content"> <!-- Corrected the typo from "sotry-content" to "story-content" -->
                     <h3 class="title"><?php echo esc_html( $about_title ); ?></h3>
                     <p class="mb-2"><?php echo esc_html( $about_disc ); ?></p>
                     <a class="button" href="<?php echo esc_url( $about_btn_link ); ?>"><?php echo esc_html( $about_btn_text ); ?></a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="row no-gutters">
                     <div class="col-6">
                         <?php 
