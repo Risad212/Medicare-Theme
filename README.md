@@ -1,3 +1,7 @@
+Here is the revised documentation with the theme upload part removed, as requested:
+
+---
+
 # Medicare Theme Documentation
 
 ## 1. Introduction
@@ -17,12 +21,10 @@
 
 ### Installation via WordPress Admin:
 
-1. Download the **Medicare** theme file (`medicare.zip`).
-2. Log in to your WordPress dashboard.
-3. Navigate to **Appearance > Themes**.
-4. Click **Add New**, then **Upload Theme**.
-5. Select the `medicare.zip` file, click **Install Now**.
-6. Once installed, click **Activate**.
+1. Log in to your WordPress dashboard.
+2. Navigate to **Appearance > Themes**.
+3. Click **Add New**.
+4. Once installed, click **Activate**.
 
 ## 4. Theme Customization
 
