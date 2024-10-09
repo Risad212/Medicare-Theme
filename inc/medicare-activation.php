@@ -39,4 +39,4 @@ function medicare_plugin_activation(){
 
       tgmpa( $plugins, $config );
 }
-add_action('tgmpa_register', 'halim_plugin_activation');
+add_action('tgmpa_register', 'medicare_plugin_activation');
