@@ -1,4 +1,8 @@
 <?php
+require_once get_template_directory(). '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory(). '/inc/medicare-activation.php';
+require_once get_template_directory(). '/inc/medicare-demo-import.php';
+
 /**
  * medicare functions and definitions
  *
